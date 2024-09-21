@@ -1,16 +1,31 @@
+import Future from "pages/Future";
+import Menu from "pages/Menu";
+import NotFound from "pages/NotFound";
+import Past from "pages/Past";
+import Present from "pages/Present";
+import { Routes, Route } from "react-router-dom";
+import Police from "hooks/Police";
+import Friends from "hooks/Friends";
+import Hobby from "hooks/Hobby";
+import SharedLayout from "./SharedLayout";
+
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
-    </div>
+          <Routes>
+          <Route path="/" element={<SharedLayout/>}>
+          <Route index element={<Menu/>}/>
+          <Route path="past" element={<Past/>}>
+            <Route path="police" element={<Police/>}/>
+            <Route path="hobby" element={<Hobby/>}/>
+            <Route path="friends" element={<Friends/>}/>
+          </Route>
+          <Route path="present" element={<Present/>}/>
+          <Route path="future" element={<Future/>}/>
+          <Route path="*" element={<NotFound/>}/>
+          </Route>
+        </Routes>
   );
 };
+
+
+//Parametry URL
