@@ -6,8 +6,7 @@ const Hobby = () => {
 
     return(
         <>
-            <div>Basket</div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, harum!</p>
+            <h4>Would you like to be part of my team?</h4>
         </>
     )
 }
