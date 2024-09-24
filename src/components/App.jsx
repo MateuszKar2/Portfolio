@@ -9,9 +9,12 @@ import Friends from "hooks/Friends";
 import Hobby from "hooks/Hobby";
 import SharedLayout from "./SharedLayout";
 
+
+
 export const App = () => {
   return (
-          <Routes>
+    <>
+      <Routes>
           <Route path="/" element={<SharedLayout/>}>
           <Route index element={<Menu/>}/>
           <Route path="past" element={<Past/>}>
@@ -24,6 +27,8 @@ export const App = () => {
           <Route path="*" element={<NotFound/>}/>
           </Route>
         </Routes>
+
+    </>
   );
 };
 

@@ -1,6 +1,5 @@
 
 
-
 const Hobby = () => {
 
     const basket = require('./../assets/images/basket.png')
