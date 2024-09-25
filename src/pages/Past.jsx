@@ -7,17 +7,17 @@ const Past = () => {
     return(
         <div>
             <h1>
-                Moja przeszłość
+                My past
             </h1>
             <ul>
                 <li>
-                    <Link to="police">Glina</Link>
+                    <Link to="police">Police</Link>
                 </li>
                 <li>
                     <Link to="hobby">Basket</Link>
                 </li>
                 <li>
-                    <Link to="friends">Oni</Link>
+                    <Link to="friends">They</Link>
                 </li>
             </ul>
             <Outlet/>

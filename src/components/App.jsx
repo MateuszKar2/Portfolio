@@ -4,9 +4,9 @@ import NotFound from "pages/NotFound";
 import Past from "pages/Past";
 import Present from "pages/Present";
 import { Routes, Route } from "react-router-dom";
-import Police from "hooks/Police";
-import Friends from "hooks/Friends";
-import Hobby from "hooks/Hobby";
+import Police from "components/Police";
+import Friends from "components/Friends";
+import Hobby from "components/Hobby";
 import SharedLayout from "./SharedLayout";
 
 
