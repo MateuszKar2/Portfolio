@@ -1,11 +1,13 @@
 
 import { Link, Outlet } from "react-router-dom";
+import { PagePast } from "styled/Past.styled.ts";
 
 
 const Past = () => {
 
     return(
-        <div>
+        <PagePast>
+            <div>
             <h1>
                 My past
             </h1>
@@ -22,6 +24,7 @@ const Past = () => {
             </ul>
             <Outlet/>
         </div>
+        </PagePast>
     )
 }
 
