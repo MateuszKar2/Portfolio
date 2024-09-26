@@ -1,4 +1,10 @@
  
+    .friends {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
     .btn {
         background-color: #45a049; /* Zielony kolor */
         border: none; /* Bez obramowania */
@@ -6,7 +12,7 @@
         padding: 15px 32px; /* Wewnętrzne odstępy */
         text-align: center; /* Wyśrodkowanie tekstu */
         text-decoration: none; /* Bez podkreślenia */
-        display: inline-block; /* Inline block */
+        display:inline-block; /*Inline block */
         font-size: 16px; /* Rozmiar czcionki */
         margin: 4px 2px; /* Margines */
         cursor: pointer; /* Kursor w postaci wskaźnika */
