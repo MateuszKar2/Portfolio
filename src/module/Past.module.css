@@ -1,0 +1,28 @@
+.list {
+    color: #3498db; /* Kolor linku */
+    text-decoration: none; /* Bez podkreślenia */
+    font-size: 18px; /* Rozmiar czcionki */
+    position: relative; /* Pozycjonowanie dla pseudo-elementu */
+    transition: color 0.9s, transform 0.9s; /* Animacja koloru i transformacji */
+}
+
+.list::after {
+    content: ''; /* Pseudo-element bez treści */
+    display: block; /* Wyświetlanie jako blok */
+    height: 3px; /* Wysokość podkreślenia */
+    width: 0; /* Początkowa szerokość */
+    background: #5114ad; /* Kolor podkreślenia */
+    transition: width 0.3s; /* Animacja szerokości */
+    position: absolute; /* Pozycjonowanie względem linku */
+    left: 0; /* Wyrównanie do lewej */
+    bottom: -5px; /* Odległość od dołu */
+}
+
+.list:hover {
+    color: #e74c3c; /* Zmiana koloru linku przy najeździe */
+    transform: scale(1.1); /* Powiększenie linku */
+}
+
+/* .list:hover::after {
+    width: 100%; /* Rozszerzenie podkreślenia przy najeździe */
+ 

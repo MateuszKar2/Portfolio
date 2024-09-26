@@ -1,30 +1,26 @@
-
 import { Link, Outlet } from "react-router-dom";
-import { PagePast } from "styled/Past.styled.ts";
-
+import styles from './../module/Past.module.css';
 
 const Past = () => {
 
     return(
-        <PagePast>
             <div>
             <h1>
                 My past
             </h1>
             <ul>
-                <li>
+                <li className={styles.list}>
                     <Link to="police">Police</Link>
                 </li>
-                <li>
+                <li className={styles.list}>
                     <Link to="hobby">Basket</Link>
                 </li>
-                <li>
-                    <Link to="friends">They</Link>
+                <li className={styles.list}>
+                    <Link to="friends">My friends</Link>
                 </li>
             </ul>
             <Outlet/>
         </div>
-        </PagePast>
     )
 }
 

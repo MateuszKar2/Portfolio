@@ -4,9 +4,9 @@ import NotFound from "pages/NotFound";
 import Past from "pages/Past";
 import Present from "pages/Present";
 import { Routes, Route } from "react-router-dom";
-import Police from "components/Police";
-import Friends from "components/Friends";
-import Hobby from "components/Hobby";
+import Police from "pages/Police";
+import Friends from "pages/Friends";
+import Hobby from "pages/Hobby";
 import SharedLayout from "./SharedLayout";
 
 
@@ -27,7 +27,16 @@ export const App = () => {
           <Route path="*" element={<NotFound/>}/>
           </Route>
         </Routes>
-
+        {/* style które będą na każdej stronie/ header / footer */}
+        {/* style do komponentu Future */}
+        {/* style do komponentu Menu */}
+        {/* style do komponentu NotFound */}
+        {/* style do komponentu Past */}
+        {/* style do komponentu Present */}
+        {/*hooki: useState, useEffect, useContext, useRef, useMemo */}
+        {/* 2. redux */}
+        {/* 3. przepisać na TS i dodać styled.ts */}
+        {/* 4. dodać testy */}
     </>
   );
 };
