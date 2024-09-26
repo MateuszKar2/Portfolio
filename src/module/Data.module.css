@@ -1,0 +1,18 @@
+.picture{
+    display: flex;
+    flex-wrap: wrap; /* Umożliwia zawijanie elementów */
+    gap: 10px; /* Odstęp między obrazkami */
+    padding: 10px; /* Padding dla kontenera */
+}
+
+.item {
+    width: calc(33.333% - 10px); /* Ustal szerokość elementów w trzech kolumnach */
+    height: auto; /* Wysokość automatyczna, aby zachować proporcje */
+    border-radius: 8px; /* Zaokrąglenie rogów */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Cień pod obrazkami */
+    transition: transform 0.3s; /* Płynna transformacja */
+}
+
+.item:hover {
+    transform: scale(1.05); /* Powiększenie na hover */
+}

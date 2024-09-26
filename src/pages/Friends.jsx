@@ -1,6 +1,8 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import styles from './../module/Friends.module.css';
 import DataFetching from "components/DataFetching";
+
+
 
 const Friends = () => {
 
@@ -10,12 +12,15 @@ const Friends = () => {
 
 
     return(
-        <div className={styles.friends}>
-            <button className={styles.btn} type="button" onClick={() => {setFriends( friends )}}>
-                {friends} 
-            </button>
+        <>
+            <div className={styles.friends}>
+                <button className={styles.btn} type="button" onClick={() => {setFriends( friends )}}>
+                    {friends} 
+                </button>
+            </div>
+            <DataFetching/>
+        </>
 
-        </div>
         // Połączyć się z bazą danych, jeżeli zostanie kliknięty button-friend
     )
 }
