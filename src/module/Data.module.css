@@ -1,18 +1,54 @@
-.picture{
-    display: flex;
-    flex-wrap: wrap; /* Umożliwia zawijanie elementów */
-    gap: 10px; /* Odstęp między obrazkami */
-    padding: 10px; /* Padding dla kontenera */
+.items__title {
+    font-size: 2em; /* Duży rozmiar czcionki */
+    font-weight: bold; /* Pogrubienie */
+    text-align: center; /* Wyśrodkowanie */
+    color: #333; /* Kolor tekstu */
+    margin: 20px 0; /* Odstęp górny i dolny */
 }
 
-.item {
-    width: calc(33.333% - 10px); /* Ustal szerokość elementów w trzech kolumnach */
-    height: auto; /* Wysokość automatyczna, aby zachować proporcje */
-    border-radius: 8px; /* Zaokrąglenie rogów */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Cień pod obrazkami */
-    transition: transform 0.3s; /* Płynna transformacja */
+
+
+.items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 kolumny */
+    gap: 20px; /* Odstęp między obrazkami */
+    position: relative; /* Umożliwia pozycjonowanie elementów wewnętrznych */
+    overflow: hidden; /* Ukrywa nadmiarowe części obrazka */
 }
 
-.item:hover {
-    transform: scale(1.05); /* Powiększenie na hover */
+.item{
+    width: 100%; /* Obrazki zajmują całą szerokość komórki */
+    height: auto; /* Utrzymuje proporcje */
+    list-style: none;
+
+}
+
+.item__picture:hover {
+    opacity: 0.7; /* Przyciemnia obrazek */
+    transform: scale(1.1);
+    opacity: 0.7;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.item__name {
+        font-size: 1.5em; /* Rozmiar czcionki */
+        font-weight: 600; /* Pogrubienie */
+        color: #444; /* Kolor tekstu */
+        margin: 10px 0; /* Odstępy */
+        text-align: left; /* Wyrównanie do lewej */
+        transition: color 0.3s; /* Płynna zmiana koloru */
+}
+
+.item__name:hover {
+    color: #007BFF; /* Zmiana koloru po najechaniu */
+    text-align: center;
+}
+
+
+.image__species {
+    font-size: 1.2em; /* Rozmiar czcionki */
+    font-style: italic; /* Kursywa */
+    color: #777; /* Jaśniejszy kolor tekstu */
+    margin: 5px 0; /* Odstępy */
+    text-align: left; /* Wyrównanie do lewej */
 }

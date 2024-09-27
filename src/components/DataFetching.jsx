@@ -11,7 +11,7 @@ const DataFetching = () => {
     useEffect(() => {
         const fetchCharacters = async () => {
             try {
-                const response = await fetch('https://rickandmortyapi.com/api/character');
+                const response = await fetch('https://rickandmortyapi.com/api/character?page=2&name=rick&status=alive');
                 if (!response.ok) {
                     throw new Error('Network response was not ok');
                 }
@@ -37,12 +37,13 @@ const DataFetching = () => {
 
     return (
         <div>
-            <h1>Postacie z Rick and Morty</h1>
-            <ul>
+            <h1 className={styles.items__title}>My Friends</h1>
+            <ul className={styles.items}>
                 {characters.map(character => (
-                    <li key={character.id} className={styles.picture}>
-                        {/* <h2>{character.name}</h2> */}
-                        <img src={character.image} alt={character.name} className={styles.item}/>
+                    <li key={character.id} className={styles.item}>
+                        <img src={character.image} alt={character.name} className={styles.item__picture}/>
+                        <h2 className={styles.item__name}>{character.name}</h2>
+                        <h4 className={styles.item__species}>{character.species}</h4>
                     </li>
                 ))}
             </ul>

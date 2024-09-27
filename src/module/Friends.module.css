@@ -1,11 +1,7 @@
- 
-    .friends {
-        display: flex;
-        justify-content: center;
-        align-items: center;
 
-    }
-    .btn {
+
+
+    .btn__container {
         background-color: #45a049; /* Zielony kolor */
         border: none; /* Bez obramowania */
         color: white; /* Biały tekst */
@@ -20,7 +16,7 @@
         transition: background-color 0.3s; /* Animacja tła */
     }
 
-    .btn:hover {
+    .btn__container:hover {
         background-color: #4c77af; /* Zmiana koloru przy najeździe */
     }
 

@@ -6,22 +6,24 @@ import DataFetching from "components/DataFetching";
 
 const Friends = () => {
 
-    const [friends, setFriends] = useState('my Friends');
+    const [showComponent, setShowComponent] = useState(false);
+
+
+
+    const handleButtonClick = () => {
+        setShowComponent(prevState => !prevState);
+    };
 
     
-
-
     return(
         <>
-            <div className={styles.friends}>
-                <button className={styles.btn} type="button" onClick={() => {setFriends( friends )}}>
-                    {friends} 
-                </button>
-            </div>
-            <DataFetching/>
+           <div className={styles.btn}>
+            <button onClick={handleButtonClick} className={styles.btn__container }>
+                {showComponent ? 'Hide friends' : 'Show my friends'}
+            </button>
+            {showComponent && <DataFetching />}
+           </div>
         </>
-
-        // Połączyć się z bazą danych, jeżeli zostanie kliknięty button-friend
     )
 }
 
