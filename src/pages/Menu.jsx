@@ -1,6 +1,5 @@
-
-import styles from './../module/Menu.module.css'
-
+import styles from './../module/Menu.module.css';
+import {SiJavascript, SiReact, SiHtml5, SiSass, SiRedux, SiNodedotjs, SiMongodb } from 'react-icons/si';
 
 
 
@@ -20,19 +19,25 @@ const Menu = () => {
             {/* Nowy komponent- projekty na kursie */}
             <div>
                 <p>Scrum Master</p>
-                {/* Ikonki języków programowania */}
+                    <SiHtml5/>
+                    <SiSass />
                 <link rel="stylesheet" href="https://potocki92.github.io/IceCream/" />
                 {/* co robiłem, jak wyglądał nasz projekt */}
             </div>
             <div>
                 <p>Developer</p>
-                {/* Ikonki języków programowania */}
+                    <SiJavascript/>
+                    <SiSass />
+                    <SiHtml5/>
                 <link rel="stylesheet" href="https://rafallakomiec.github.io/filmoteka-goit-js-group-project/" />
                 {/* co robiłem, jak wyglądał nasz projekt */}
             </div>
             <div>
                 <p>Team Leader</p>
-                {/* Ikonki języków programowania */}
+                    <SiReact/>
+                    <SiRedux/>
+                    <SiNodedotjs/>
+                    <SiMongodb/>
                 <link rel="stylesheet" href="" />
                 {/* co robiłem, jak wyglądał nasz projekt */}
             </div>

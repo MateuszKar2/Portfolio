@@ -20,9 +20,5 @@
 
 .list:hover {
     color: #e74c3c; /* Zmiana koloru linku przy najeździe */
-    transform: scale(1.1); /* Powiększenie linku */
-}
+} 
 
-/* .list:hover::after {
-    width: 100%; /* Rozszerzenie podkreślenia przy najeździe */
- 
