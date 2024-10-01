@@ -45,3 +45,10 @@
     font-size: 22px;
 }
 
+.project__text {
+    padding-left: 50px;
+    padding-right: 250px;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6; /* Opcjonalnie, dla lepszej czytelności */
+}
