@@ -45,9 +45,14 @@
     font-size: 22px;
 }
 
+.project__place {
+    display: flex;
+    align-items: center;
+}
+
 .project__text {
     padding-left: 50px;
-    padding-right: 250px;
+    padding-right: 50px;
     text-align: left;
     font-family: 'Roboto', sans-serif;
     line-height: 1.6; /* Opcjonalnie, dla lepszej czytelności */
