@@ -1,7 +1,7 @@
 .text {
     font-size: 18px; /* Rozmiar czcionki */
     background: linear-gradient(45deg, #ff0080, #ff8c00); /* Gradient tła */
-    -webkit-background-clip: text; /* Użycie gradientu jako tło tekstu */
+    background-clip: text; /* Użycie gradientu jako tło tekstu */
     -webkit-text-fill-color: transparent; /* Ukrycie koloru wypełnienia tekstu */
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5); /* Cień tekstu */
     animation: glow 1.5s infinite alternate; /* Animacja świecenia */
@@ -17,13 +17,31 @@
     }
 }
 
-p {
+.project__header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.project__position {
     font-size: 24px; /* Rozmiar czcionki dla paragrafu */
     color: #b89d08; /* Kolor tekstu paragrafu */
     margin-top: 20px; /* Margines nad paragrafem */
     transition: color 0.3s; /* Animacja koloru */
 }
 
-p:hover {
+.project__position:hover {
     color: #ff8c00; /* Zmiana koloru przy najeździe */
 }
+
+.project__icons {
+    color: black;
+    transition: color 1s;
+    font-size: 20px;
+}
+
+.project__icons:hover {
+    color: purple;
+    font-size: 22px;
+}
+
