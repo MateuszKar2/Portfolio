@@ -1,0 +1,171 @@
+.container__circle {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding-top: 50px;
+}
+
+.circle {
+    width: 250px; /* Szerokość kółka */
+    height: 250px; /* Wysokość kółka */
+    overflow: hidden;
+    border-radius: 50%; /* Ustawia kształt kółka */
+}
+
+.circle__picture {
+    width: 100%; /* Dostosowuje obraz do kółka */
+    height: auto; /* Zachowuje proporcje */
+}
+
+.circle__text {
+    color: red;
+    border-left: 4px solid #007BFF; /* Kolor pionowej linii */
+    padding: 15px 20px; /* Odstępy wewnętrzne */
+    margin: 20px 0; /* Margines górny i dolny */
+    font-style: italic; /* Kursywa */
+    position: relative; /* Umożliwia pozycjonowanie pseudo-elementu */
+}
+
+.circle__text::before {
+    content: '“'; /* Pseudo-element do otwierającego cudzysłowu */
+    font-size: 50px; /* Rozmiar cudzysłowu */
+    position: absolute; /* Pozycjonowanie */
+    top: -10px; /* Wysokość */
+    left: 10px; /* Pozycja w lewo */
+    color: #007BFF; /* Kolor cudzysłowu */
+}
+
+.icons {
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding-top: 30px;
+}
+
+.icon__javaScript {
+    color: yellow;
+    cursor: pointer; /* Zmiana kursora przy najechaniu */
+}
+
+.icon__typeScript {
+    color: blue;
+    cursor: pointer; /* Zmiana kursora przy najechaniu */
+}
+
+.icon__react {
+    color: greenyellow;
+    cursor: pointer; /* Zmiana kursora przy najechaniu */
+}
+
+.icon__redux {
+    color: purple;
+    cursor: pointer; /* Zmiana kursora przy najechaniu */
+}
+
+.icon__node {
+    color: brown;
+    cursor: pointer; /* Zmiana kursora przy najechaniu */
+}
+
+.icon__mongo {
+    color: green;
+    cursor: pointer; /* Zmiana kursora przy najechaniu */
+}
+
+.icon__html {
+    color: orange;
+    cursor: pointer; /* Zmiana kursora przy najechaniu */
+}
+
+.icon__cass {
+    color: red;
+    cursor: pointer; /* Zmiana kursora przy najechaniu */
+}
+
+.icon__css {
+    color: rgb(62, 20, 226);
+    cursor: pointer; /* Zmiana kursora przy najechaniu */
+}
+
+
+.icon__javaScript:hover {
+    background-color: black; /* Kolor tła po najechaniu */
+    color: yellow; /* Kolor ikony po najechaniu */
+    transform: scale(1.5); /* Powiększenie ikony */
+    border-radius: 50%; /* Zmiana kształtu na okrągły */
+}
+
+.icon__typeScript:hover {
+    background-color: black; /* Kolor tła po najechaniu */
+    color: blue; /* Kolor ikony po najechaniu */
+    transform: scale(1.5); /* Powiększenie ikony */
+    border-radius: 50%; /* Zmiana kształtu na okrągły */
+}
+
+.icon__react:hover {
+    background-color: rgb(10, 89, 67); /* Kolor tła po najechaniu */
+    color: rgb(0, 255, 179); /* Kolor ikony po najechaniu */
+    transform: scale(1.5); /* Powiększenie ikony */
+    border-radius: 50%; /* Zmiana kształtu na okrągły */
+}
+
+.icon__redux:hover {
+    background-color: purple; /* Kolor tła po najechaniu */
+    color: white; /* Kolor ikony po najechaniu */
+    transform: scale(1.5); /* Powiększenie ikony */
+    border-radius: 50%; /* Zmiana kształtu na okrągły */
+}
+
+.icon__node:hover {
+    background-color: gray; /* Kolor tła po najechaniu */
+    color: rgb(14, 116, 33); /* Kolor ikony po najechaniu */
+    transform: scale(1.5); /* Powiększenie ikony */
+    border-radius: 50%; /* Zmiana kształtu na okrągły */
+}
+
+.icon__mongo:hover {
+    color: green; /* Kolor ikony po najechaniu */
+    transform: scale(1.5); /* Powiększenie ikony */
+    border-radius: 50%; /* Zmiana kształtu na okrągły */
+}
+
+.icon__html:hover {
+    color: rgb(139, 68, 14); /* Kolor ikony po najechaniu */
+    transform: scale(1.5); /* Powiększenie ikony */
+}
+
+.icon__sass:hover {
+    background-color: rgb(171, 27, 75); /* Kolor tła po najechaniu */
+    color: white; /* Kolor ikony po najechaniu */
+    transform: scale(1.5); /* Powiększenie ikony */
+    border-radius: 50%; /* Zmiana kształtu na okrągły */
+}
+
+.icon__css:hover {
+    color: rgb(21, 71, 187); /* Kolor ikony po najechaniu */
+    transform: scale(1.5); /* Powiększenie ikony */
+}
+
+
+.text {
+    font-size: 24px; /* Rozmiar czcionki */
+    background: linear-gradient(45deg, #ff0080, #ff8c00, rgb(25, 98, 176)); /* Gradient tła */
+    background-clip: text; /* Użycie gradientu jako tło tekstu */
+    -webkit-text-fill-color: transparent; /* Ukrycie koloru wypełnienia tekstu */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5); /* Cień tekstu */
+    animation: glow 1.5s infinite alternate; /* Animacja świecenia */
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+@keyframes text {
+    0% {
+        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    }
+    100% {
+        text-shadow: 0 0 20px rgba(255, 136, 0, 0.7), 
+                     0 0 30px rgba(255, 0, 128, 0.7); /* Intensyfikacja cienia */
+    }
+}

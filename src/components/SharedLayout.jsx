@@ -2,6 +2,7 @@ import { Outlet } from "react-router-dom";
 import {Container, Header, Logo, Link} from './SharedLayout.styled';
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
+import Footer from "pages/Footer";
 
 const StyledLink = styled(NavLink)`
   padding: 8px 16px;
@@ -25,13 +26,14 @@ const SharedLayout = () => {
                 <Logo>
                 </Logo>
                     <nav>
-                        <Link to="/" end>Menu</Link>
+                        <Link to="/" end>Cv</Link>
                         <StyledLink to="/past">Past</StyledLink>
-                        <Link to="/present">Present</Link>
+                        <Link to="/projects">Projects</Link>
                         <Link to="/future">Future</Link>
                     </nav>
             </Header>
             <Outlet />
+            <Footer/>
         </Container>
     )
 }
