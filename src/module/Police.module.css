@@ -1,0 +1,17 @@
+.police__list {
+    list-style-type: none; /* Usuwa kropki */
+    padding: 0; /* Usuwa domyślne wcięcie */
+    margin: 0; /* Usuwa domyślne marginesy */
+    font-weight: bold;
+}
+
+.police__department {
+    padding: 10px; /* Wewnętrzny odstęp */
+    border: 1px solid #ccc; /* Ramka */
+    margin-bottom: 5px; /* Odstęp między elementami */
+    transition: background-color 0.3s; /* Płynna zmiana koloru tła */
+}
+
+.police__department:hover {
+    background-color: #f0f0f0; /* Zmiana koloru tła przy najeździe */
+}

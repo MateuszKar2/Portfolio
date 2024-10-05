@@ -27,9 +27,9 @@ const SharedLayout = () => {
                 </Logo>
                     <nav>
                         <Link to="/" end>Cv</Link>
-                        <StyledLink to="/past">Past</StyledLink>
+                        <StyledLink to="/hobby">Hobby</StyledLink>
                         <Link to="/projects">Projects</Link>
-                        <Link to="/future">Future</Link>
+                        <Link to="/experience">Experience </Link>
                     </nav>
             </Header>
             <Outlet />

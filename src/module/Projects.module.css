@@ -40,3 +40,8 @@
     font-family: 'Roboto', sans-serif;
     line-height: 1.6; /* Opcjonalnie, dla lepszej czytelności */
 }
+
+.project__links {
+    display: block;
+    
+}

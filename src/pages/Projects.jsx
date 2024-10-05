@@ -5,6 +5,7 @@ import {SiJavascript, SiReact, SiHtml5, SiSass, SiRedux, SiNodedotjs, SiMongodb 
 
 const iceCream = require('./../assets/images/iceCream.png');
 const filmoteka = require('./../assets/images/filmoteka.png');
+const kapusta =require('./../assets/images/Kapusta.png');
 
 
 const  Projects = () => {
@@ -61,9 +62,30 @@ const  Projects = () => {
                         <SiNodedotjs/>
                         <SiMongodb/>
                     </div>
-                <link rel="stylesheet" href="" />
-                {/* co robiłem, jak wyglądał nasz projekt */}
+
+            <div>
+                <a className={styles.project__links} href="https://kapusta-front-end.vercel.app/login" target="_blank" rel="noopener noreferrer">
+                        https://kapusta-front-end.vercel.app/login(frontend)
+                </a>
+
+                <a className={styles.project__links} href="https://goit-fs17-react-node-final-project-backend.vercel.app/" target="_blank" rel="noopener noreferrer">
+                        https://goit-fs17-react-node-final-project-backend.vercel.app/(backhend)
+                </a>
             </div>
+
+            </div>
+
+            <div className={styles.project__place}>
+                <div className={styles.project__text}>
+                I took on the role of team leader for this project, 
+                where I was responsible for delegating tasks and ensuring the accuracy of the code.
+                 As the project progressed, I also managed code conflicts and facilitated resolutions.
+                </div>
+                <img src={kapusta} alt="My project three" width={200}></img>
+            </div>
+
+            <div>I invite! I have many more projects on github</div>
+
         </>
     )
 }

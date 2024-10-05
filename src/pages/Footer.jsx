@@ -5,20 +5,18 @@ const Footer = () => {
     return(
         <>
             <div className={styles.footer}>
-                Foooter
-            </div>
-            <div class={styles.contact}>
-                <h2>Kontakt</h2>
-                    <p class="phone">
-                        📞 <a href="tel:+48696270854">+48 696 270 854</a>
-                    </p>
-                     <p class={styles.contact__linkedin}>
-                         💼 <a href="https://www.linkedin.com/in/twojprofil" target="_blank">LinkedIn</a>
-                     </p>
 
-                    <p class={styles.contact__github}>
-                        🐱‍👤 <a href="https://github.com/twojprofil" target="_blank">GitHub</a>
-                    </p> 
+                        <p>
+                            📞 <a className={styles.footer__media} href="tel:+48696270854">+48 696 270 854</a>
+                        </p>
+
+                        <p>
+                                <a className={styles.footer__media} href="https://linkedin.com/in/mateuszkarpiński" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                        </p>
+
+                        <p>
+                                <a className={styles.footer__media} href="https://github.com/MateuszKar2" target="_blank" rel="noopener noreferrer">GitHub</a>
+                        </p> 
             </div>
 
         </>

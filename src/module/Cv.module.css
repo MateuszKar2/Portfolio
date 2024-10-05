@@ -84,7 +84,7 @@
 }
 
 .icon__css {
-    color: rgb(62, 20, 226);
+    color: rgb(226, 20, 174);
     cursor: pointer; /* Zmiana kursora przy najechaniu */
 }
 
@@ -143,7 +143,7 @@
 }
 
 .icon__css:hover {
-    color: rgb(21, 71, 187); /* Kolor ikony po najechaniu */
+    color: rgb(118, 13, 139); /* Kolor ikony po najechaniu */
     transform: scale(1.5); /* Powiększenie ikony */
 }
 

@@ -1,0 +1,6 @@
+
+.image {
+    width: 200px; /* szerokość */
+    height: 150px; /* wysokość */
+    object-fit: cover; /* przycina obraz, aby wypełnił kontener */
+}

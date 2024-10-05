@@ -1,5 +1,22 @@
 
 
 .footer {
-    background-color: blue;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 100px;
+    display: flex;
+    justify-content: space-around; /* Równe odstępy między linkami */
+    padding: 20px; /* Dodatkowe odstępy wewnętrzne */
 }
+
+.footer__media {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.footer__media:hover {
+    color: black;
+}
+
