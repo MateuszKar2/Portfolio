@@ -20,7 +20,7 @@ const Police = () => {
             
             <div className={styles.police__container}>
 
-            <img className={styles.police__picture} src={police} alt="My job" width={400}></img>
+            <img className={styles.police__picture} src={police} alt="My job"></img>
 
                 <ul className={styles.police__list}>
                     <li className={styles.police__department}>
@@ -37,7 +37,7 @@ const Police = () => {
                     </li>
                 </ul>
 
-                <img className={styles.police__picture} src={police2} alt="My job" width={400}></img>
+                <img className={styles.police__picture} src={police2} alt="My job"></img>
             </div>
             
 
