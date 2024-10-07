@@ -149,12 +149,6 @@
 
 
 .text {
-    font-size: 24px; /* Rozmiar czcionki */
-    background: linear-gradient(45deg, #ff0080, #ff8c00, rgb(25, 98, 176)); /* Gradient tła */
-    background-clip: text; /* Użycie gradientu jako tło tekstu */
-    -webkit-text-fill-color: transparent; /* Ukrycie koloru wypełnienia tekstu */
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5); /* Cień tekstu */
-    animation: glow 1.5s infinite alternate; /* Animacja świecenia */
     padding-top: 50px;
     padding-left: 50px;
     padding-right: 50px;
@@ -168,4 +162,23 @@
         text-shadow: 0 0 20px rgba(255, 136, 0, 0.7), 
                      0 0 30px rgba(255, 0, 128, 0.7); /* Intensyfikacja cienia */
     }
+}
+
+.text__course {
+    font-size: 25px;
+}
+
+.text__favourite {
+    font-size: 20px;
+    text-align: center;
+}
+
+.text__additional {
+    font-size: 20px;
+    text-align: center;
+}
+
+.text__cooporate {
+    font-size: 25px;
+    padding-left: 300px;
 }

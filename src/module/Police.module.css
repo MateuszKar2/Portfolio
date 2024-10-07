@@ -5,11 +5,20 @@
     font-weight: bold;
 }
 
+.police__container {
+    display: flex;
+    align-items: center; /* Wyrównuje elementy w pionie */
+}
+
+.police__picture {
+    width: 100px; /* Ustaw szerokość obrazków */
+    height: auto; /* Utrzymuje proporcje obrazków */
+}
+
 .police__department {
-    padding: 10px; /* Wewnętrzny odstęp */
-    border: 1px solid #ccc; /* Ramka */
-    margin-bottom: 5px; /* Odstęp między elementami */
-    transition: background-color 0.3s; /* Płynna zmiana koloru tła */
+    flex-grow: 1; /* Sprawia, że tekst zajmuje dostępne miejsce */
+    text-align: center; /* Wyrównuje tekst do środka */
+    padding: 0 20px; /* Dodaje odstępy po bokach tekstu */
 }
 
 .police__department:hover {

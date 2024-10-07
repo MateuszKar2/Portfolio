@@ -17,25 +17,30 @@ const Police = () => {
                         and cooperating in a team became my everyday life.
                     </div>
             </div>
-                
+            
+            <div className={styles.police__container}>
+
             <img className={styles.police__picture} src={police} alt="My job" width={400}></img>
 
-            <ul className={styles.police__list}>
-                <li className={styles.police__department}>
-                    Prevention
-                </li>
-                <li className={styles.police__department}>
-                    Criminal service
-                </li>
-                <li className={styles.police__department}>
-                    Traffic
-                </li>
-                <li className={styles.police__department}>
-                    Special services
-                </li>
-            </ul>
+                <ul className={styles.police__list}>
+                    <li className={styles.police__department}>
+                        Prevention
+                    </li>
+                    <li className={styles.police__department}>
+                        Criminal service
+                    </li>
+                    <li className={styles.police__department}>
+                        Traffic
+                    </li>
+                    <li className={styles.police__department}>
+                        Special services
+                    </li>
+                </ul>
 
-            <img className={styles.police__picture} src={police2} alt="My job" width={400}></img>
+                <img className={styles.police__picture} src={police2} alt="My job" width={400}></img>
+            </div>
+            
+
         </div>
     )
 }

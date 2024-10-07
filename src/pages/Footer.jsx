@@ -10,11 +10,12 @@ const Footer = () => {
                             📞 <a className={styles.footer__media} href="tel:+48696270854">+48 696 270 854</a>
                         </p>
 
-                        <p>
-                                <a className={styles.footer__media} href="https://linkedin.com/in/mateuszkarpiński" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                        <p className={styles.footer__beetwen}>
+                                    <a className={styles.footer__media} href="https://linkedin.com/in/mateuszkarpiński" target="_blank" rel="noopener noreferrer">LinkedIn</a>
                         </p>
+                        
 
-                        <p>
+                        <p className={styles.footer__beetwen}>
                                 <a className={styles.footer__media} href="https://github.com/MateuszKar2" target="_blank" rel="noopener noreferrer">GitHub</a>
                         </p> 
             </div>
