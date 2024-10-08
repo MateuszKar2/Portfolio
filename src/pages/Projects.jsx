@@ -1,10 +1,10 @@
-
+import filmoteka from './../assets/images/filmoteka.png'
 
 import styles from './../module/Projects.module.css';
 import {SiJavascript, SiReact, SiHtml5, SiSass, SiRedux, SiNodedotjs, SiMongodb } from 'react-icons/si';
 
 const iceCream = require('./../assets/images/iceCream.png');
-const filmoteka = require('./../assets/images/filmoteka.png');
+// const filmoteka = require('./../assets/images/filmoteka.png');
 const kapusta =require('./../assets/images/Kapusta.png');
 
 
