@@ -13,17 +13,18 @@ const Hobby = () => {
                     <div className={styles.traveling__container}>
                             
                         <div className={styles.traveling__text}>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, debitis.
+                            When I have a vacation, I leave everyday life behind. I'm packing and going on a journey.
+                            It may be my country or further away, to another continent.
                         </div>
                     </div>
             </div>
 
             <div className={styles.sports}>   
-                <h2 className={styles.sports__title}>I love do sports</h2>
+                <h2 className={styles.sports__title}>I love sports</h2>
                     <div className={styles.sports__container}>
                             
                         <div className={styles.sports__text}>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, debitis.
+                            I love sports, competition and striving for perfection. Basketball, boxing, dancing. It's all part of me.
                         </div>
                     </div>
             </div>
@@ -33,7 +34,7 @@ const Hobby = () => {
                     <div className={styles.reading__container}>
 
                         <div className={styles.reading__text}>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, debitis.
+                            When I finish work and need a break from writing code, I like to read a book.
                         </div>
                     </div>
             </div>

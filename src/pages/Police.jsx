@@ -38,6 +38,7 @@ const Police = () => {
                 </ul>
 
                 <img className={styles.police__picture} src={police2} alt="My job"></img>
+                
             </div>
             
 
