@@ -1,6 +1,11 @@
 
-.image {
-    width: 200px; /* szerokość */
-    height: 150px; /* wysokość */
-    object-fit: cover; /* przycina obraz, aby wypełnił kontener */
-}
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Trzy równe kolumny */
+    gap: 100px; /* Odstęp między kolumnami */
+    text-align: center;
+    font-size: 20px;
+    font-style: initial;
+    color: #0f021d;
+    padding-bottom: 300px;
+};
