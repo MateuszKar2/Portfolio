@@ -30,7 +30,7 @@ const Police = () => {
                         Criminal service
                     </li>
                     <li className={styles.police__department}>
-                        Traffic
+                        Traffic pollice
                     </li>
                     <li className={styles.police__department}>
                         Special services

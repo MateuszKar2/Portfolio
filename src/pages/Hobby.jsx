@@ -12,8 +12,8 @@ const Hobby = () => {
                 <h2 className={styles.hobby__title}>Travel</h2>
                             
                         <div className={styles.hobby__text}>
-                            When I have a vacation, I leave everyday life behind. I'm packing and going on a journey.
-                            It may be my country or further away, to another continent.
+                            When I go on holiday, I leave everyday life behind. I pack my luggage and set off.
+                            It may be my country or further away, even another continent.
                         </div>
             </div>
 
@@ -21,8 +21,8 @@ const Hobby = () => {
                 <h2 className={styles.hobby__title}>Sports</h2>
                             
                         <div className={styles.hobby__text}>
-                            I love sports, competition and striving for perfection. Basketball, boxing, dancing, swimming, archery. 
-                            It's a part of me that helps me work better.
+                            I love sports, competition and striving for perfection. Basketball, boxing, dancing, swimming and archery. 
+                            These activities help me work better.
                         </div>
             </div>
 
@@ -32,7 +32,7 @@ const Hobby = () => {
 
                         <div className={styles.hobby__text}>
                             When I finish work and need a break from writing code, I like to read a book.
-                            Books about programming, history, economics and 19th century novels
+                            My favorite bokks are about programming, history and economics. I also enjoy 19th century novels
                         </div>
             </div>
 
