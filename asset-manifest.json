@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.41531c98.css",
-    "main.js": "/Portfolio/static/js/main.9948663b.js",
+    "main.js": "/Portfolio/static/js/main.46be8ddc.js",
     "static/media/iceCream.png": "/Portfolio/static/media/iceCream.52821dfeb3b28e18e581.png",
     "static/media/police_1.jpg": "/Portfolio/static/media/police_1.07d9b8e547d8e3192cc9.jpg",
     "static/media/police_2.jpg": "/Portfolio/static/media/police_2.20ad2442447fda98db69.jpg",
@@ -9,10 +9,10 @@
     "static/media/my.jpg": "/Portfolio/static/media/my.becb13d558c08f2e6de3.jpg",
     "index.html": "/Portfolio/index.html",
     "main.41531c98.css.map": "/Portfolio/static/css/main.41531c98.css.map",
-    "main.9948663b.js.map": "/Portfolio/static/js/main.9948663b.js.map"
+    "main.46be8ddc.js.map": "/Portfolio/static/js/main.46be8ddc.js.map"
   },
   "entrypoints": [
     "static/css/main.41531c98.css",
-    "static/js/main.9948663b.js"
+    "static/js/main.46be8ddc.js"
   ]
 }
