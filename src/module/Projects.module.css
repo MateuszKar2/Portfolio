@@ -8,13 +8,13 @@
 
 .project__position {
     font-size: 24px; /* Rozmiar czcionki dla paragrafu */
-    color: #b89d08; /* Kolor tekstu paragrafu */
+    color: #62550e; /* Kolor tekstu paragrafu */
     margin-top: 20px; /* Margines nad paragrafem */
     transition: color 0.3s; /* Animacja koloru */
 }
 
 .project__position:hover {
-    color: #ff8c00; /* Zmiana koloru przy najeździe */
+    color: #b66b0f; /* Zmiana koloru przy najeździe */
 }
 
 .project__icons {
@@ -24,7 +24,7 @@
 }
 
 .project__icons:hover {
-    color: purple;
+    color: rgb(63, 116, 30);
     font-size: 22px;
 }
 

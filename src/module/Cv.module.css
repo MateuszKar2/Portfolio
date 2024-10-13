@@ -18,12 +18,13 @@
 }
 
 .circle__text {
-    color: red;
+    color: rgb(56, 19, 53);
     border-left: 4px solid #007BFF; /* Kolor pionowej linii */
     padding: 15px 20px; /* Odstępy wewnętrzne */
     margin: 20px 0; /* Margines górny i dolny */
     font-style: italic; /* Kursywa */
     position: relative; /* Umożliwia pozycjonowanie pseudo-elementu */
+    font-weight: 800;
 }
 
 .circle__text::before {
