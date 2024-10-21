@@ -40,9 +40,9 @@ const  Projects = () => {
                         <SiSass />
                         <SiHtml5/>
                     </div>
-                    <a href="https://rafallakomiec.github.io/filmoteka-goit-js-group-project/" target="_blank" rel="noopener noreferrer">
+{/*                     <a href="https://rafallakomiec.github.io/filmoteka-goit-js-group-project/" target="_blank" rel="noopener noreferrer">
                              https://rafallakomiec.github.io/filmoteka-goit-js-group-project/
-                    </a>
+                    </a> */}
             </div>
             
             <div className={styles.project__place}>
@@ -51,7 +51,7 @@ const  Projects = () => {
                     We used an external API from the TMDb database to fetch movie data. During the project, I used advanced JavaScript and applied the BEM methodology with the SASS preprocessor.
                     My tasks included implementing the modal, managing localStorage, and configuring the API.
                 </div>
-                <img src={filmoteka} alt="My project two" width={160}></img>
+{/*                 <img src={filmoteka} alt="My project two" width={160}></img> */}
             </div>
 
             <div className={styles.project__header}>
