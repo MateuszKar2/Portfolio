@@ -4,7 +4,7 @@ import styles from './../module/Projects.module.css';
 import {SiJavascript, SiReact, SiHtml5, SiSass, SiRedux, SiNodedotjs, SiMongodb } from 'react-icons/si';
 
 const iceCream = require('./../assets/images/iceCream.png');
-// const filmoteka = require('./../assets/images/filmoteka.png');
+const filmoteka = require('./../assets/images/Filmoteka.png');
 const kapusta =require('./../assets/images/Kapusta.png');
 
 
@@ -29,7 +29,17 @@ const  Projects = () => {
                     I chaired group meetings and supported developers.
                     I presented the group project.
                 </div>
-                <img src={iceCream} alt="My project" width={200}></img>
+                <img src={iceCream} 
+                alt="My project" 
+                style={{
+                width: '200px',
+                height: '150px',
+                objectFit: 'cover',
+                borderRadius: '8px',
+                boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)',
+                margin: '20px'
+                    }} 
+                />
             </div>
             
 
@@ -40,9 +50,9 @@ const  Projects = () => {
                         <SiSass />
                         <SiHtml5/>
                     </div>
-                    {/* <a href="https://rafallakomiec.github.io/filmoteka-goit-js-group-project/" target="_blank" rel="noopener noreferrer">
+                    <a href="https://rafallakomiec.github.io/filmoteka-goit-js-group-project/" target="_blank" rel="noopener noreferrer">
                              https://rafallakomiec.github.io/filmoteka-goit-js-group-project/
-                    </a> */}
+                    </a>
             </div>
             
             <div className={styles.project__place}>
@@ -51,7 +61,18 @@ const  Projects = () => {
                     We used an external API from the TMDb database to fetch movie data. During the project, I used advanced JavaScript and applied the BEM methodology with the SASS preprocessor.
                     My tasks included implementing the modal, managing localStorage, and configuring the API.
                 </div>
-                {/* <img src={filmoteka} alt="My project two" width={160}></img> */}
+                <img 
+                src={filmoteka} 
+                alt="My project two" 
+                style={{
+                    width: '200px',
+                    height: '150px',
+                    objectFit: 'cover',
+                    borderRadius: '8px',
+                    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)',
+                    margin: '20px'
+                }} 
+                />
             </div>
 
             <div className={styles.project__header}>
@@ -81,10 +102,22 @@ const  Projects = () => {
                 where I was responsible for delegating tasks and ensuring the accuracy of the code.
                  As the project progressed, I also managed code conflicts and facilitated resolutions.
                 </div>
-                <img src={kapusta} alt="My project three" width={200}></img>
+                <img src={kapusta}
+                 alt="My project three"
+                 style={{
+                    width: '200px',
+                    height: '150px',
+                    objectFit: 'cover',
+                    borderRadius: '8px',
+                    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)',
+                    margin: '20px'
+                }} 
+                />
+            </div>
+            <div className={styles.project__cont}>
+                <div className={styles.project__footer}>I invite! I have many more projects on github</div>
             </div>
 
-            <div>I invite! I have many more projects on github</div>
 
         </>
     )

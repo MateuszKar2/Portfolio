@@ -15,17 +15,18 @@
 
 .project__position:hover {
     color: #b66b0f; /* Zmiana koloru przy najeździe */
+    font-size: 34px;
 }
 
 .project__icons {
     color: black;
     transition: color 1s;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 .project__icons:hover {
     color: rgb(63, 116, 30);
-    font-size: 22px;
+    font-size: 32px;
 }
 
 .project__place {
@@ -34,6 +35,7 @@
 }
 
 .project__text {
+    font-size: 20px;
     padding-left: 50px;
     padding-right: 50px;
     text-align: left;
@@ -42,6 +44,22 @@
 }
 
 .project__links {
-    display: block;
-    
+    display: block;   
+}
+
+.project__cont {
+    overflow: hidden;          /* Zapobiega wyciekaniu tekstu */
+    width: 100%;             /* Ustal szerokość kontenera */
+    padding: 10px;            /* Opcjonalne wypełnienie */
+    font-size: 24px;
+    color: #62550e;
+}
+
+.project__cont:hover .project__footer {
+    transform: translateX(50%);  /* Przesunięcie tekstu na 100% szerokości */
+    transition: transform 3s ease;    
+}
+
+.project__footer {
+    transform: translateX(0);        /* Początkowe położenie */
 }

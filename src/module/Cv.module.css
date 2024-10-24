@@ -171,16 +171,17 @@
 
 .text__favourite {
     font-size: 20px;
-    text-align: center;
+    text-align: left;
 }
 
 .text__additional {
     font-size: 20px;
-    text-align: center;
+    text-align: left;
 }
 
 .text__cooporate {
     font-size: 25px;
     padding-left: 300px;
     padding-bottom: 50px;
+    text-align: left;
 }
