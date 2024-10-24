@@ -58,6 +58,7 @@
 .project__cont:hover .project__footer {
     transform: translateX(50%);  /* Przesunięcie tekstu na 100% szerokości */
     transition: transform 3s ease;    
+    color: #b66b0f;
 }
 
 .project__footer {
