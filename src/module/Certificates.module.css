@@ -1,0 +1,116 @@
+/* Główna sekcja certyfikatów */
+.certificatesSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+    gap: 40px;
+}
+
+/* Kontener dla certyfikatu */
+.certificat {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 900px;
+    gap: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 0;
+    animation: fadeInUp 1s forwards; /* Animacja ładowania */
+}
+
+/* Animacja wejścia */
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Efekt hover dla certyfikatu */
+.certificat:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Styl dla kontenera obrazków */
+.certificat__imageContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 200px;
+}
+
+/* Styl dla obrazków certyfikatu */
+.certificat__images,
+.certificat__images2 {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.certificat__images:hover,
+.certificat__images2:hover {
+    transform: scale(1.05); /* Efekt powiększenia obrazków przy najechaniu */
+}
+
+/* Styl dla info certyfikatu */
+.certificat__info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Tytuł certyfikatu */
+.certificat__title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Opis certyfikatu */
+.certificat__description {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* Responsywność */
+@media (max-width: 768px) {
+    .certificat {
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+    }
+
+    .certificat__imageContainer {
+        width: 100%;
+    }
+
+    .certificat__images,
+    .certificat__images2 {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .certificat__title {
+        font-size: 18px;
+    }
+
+    .certificat__description {
+        font-size: 13px;
+    }
+}

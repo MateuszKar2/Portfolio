@@ -1,0 +1,10 @@
+
+/* Stylizacja kontenera renderera */
+.threeContainer {
+    margin: 0;
+    padding: 0;
+    background-color: transparent; /* Ustawienie przezroczystego tła */
+    border: 2px solid #000; /* Dodanie ramki dla lepszej widoczności */
+    position: relative; /* Pozwoli na ewentualne ustawienia w pozycjonowaniu */
+}
+

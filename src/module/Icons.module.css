@@ -1,0 +1,47 @@
+.icon__express{
+    color: rgb(8, 139, 58);
+}
+
+.icon__vue {
+    color: rgb(32, 230, 6);
+}
+
+.icon__gitHub {
+    color: rgb(215, 141, 215);
+}
+
+.icon__javaScript {
+    color: yellow;
+}
+
+.icon__typeScript {
+    color: blue;
+}
+
+.icon__react {
+    color: rgb(8, 107, 107);
+}
+
+.icon__redux {
+    color: purple;
+}
+
+.icon__node {
+    color: rgb(121, 209, 57);
+}
+
+.icon__mongo {
+    color: rgb(4, 64, 4);
+}
+
+.icon__html {
+    color: rgb(255, 30, 0);
+}
+
+.icon__sass {
+    color: rgb(255, 0, 195);
+}
+
+.icon__css {
+    color: rgb(226, 150, 20);
+}

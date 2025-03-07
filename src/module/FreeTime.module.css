@@ -1,0 +1,110 @@
+.freeTime {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.freeTime__title {
+    font-size: 40px;
+}
+
+.freeTime__slideInLeft {
+    margin: 40px;
+    font-size: 40px;
+    background-color: rgb(21, 80, 7);
+    position: relative;
+    opacity: 0;  /* Ukrywamy tekst na początku */
+    animation: slideInLeft 2s forwards; /* Animacja przesuwania z lewej */
+}
+
+.freeTime__slideInRight {
+    margin: 40px;
+    font-size: 40px;
+    background-color: rgb(18, 8, 56);
+    position: relative;
+    opacity: 0;  /* Ukrywamy tekst na początku */
+    animation: slideInRight 2s forwards; /* Animacja przesuwania z prawej */
+}
+
+.freeTime__slideInLeftDown {
+    margin: 25px;
+    font-size: 25px;
+    background-color: rgb(21, 80, 7);
+    position: relative;
+    opacity: 0;  /* Ukrywamy tekst na początku */
+    animation: slideInLeftDown 1s forwards; /* Animacja przesuwania z lewej */
+}
+
+.freeTime__slideInRightDown {
+    margin: 25px;
+    font-size: 25px;
+    background-color: rgb(16, 4, 44);
+    position: relative;
+    opacity: 0;  /* Ukrywamy tekst na początku */
+    animation: slideInRightDown 1s forwards; /* Animacja przesuwania z prawej */
+}
+
+.freeTime__down {
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+}
+
+.freeTime__motto {
+    font-size: 30px;
+    padding-top: 100px;
+}
+
+.freeTime__element {
+
+    color: rgb(18, 8, 56);
+}
+
+/* Animacje przesuwania */
+
+/* Animacja przesuwania z lewej */
+@keyframes slideInLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(2%);
+        opacity: 1;
+    }
+}
+
+/* Animacja przesuwania z prawej */
+@keyframes slideInRight {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(-2%);
+        opacity: 1;
+    }
+}
+
+/* Animacja przesuwania z lewej (w dół) */
+@keyframes slideInLeftDown {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+/* Animacja przesuwania z prawej (w dół) */
+@keyframes slideInRightDown {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(-40%);
+        opacity: 1;
+    }
+}

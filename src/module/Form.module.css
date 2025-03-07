@@ -1,0 +1,74 @@
+.form {
+  display: flex;
+  flex-direction: column; /* Układ formularza w kolumnie */
+  max-width: 300px; /* Zwiększona maksymalna szerokość formularza */
+  margin: 0 auto; /* Centrowanie formularza */
+  padding: 20px;
+  background-color: #f9f9f9; /* Kolor tła formularza */
+  border-radius: 8px; /* Zaokrąglone rogi */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Lekki cień */
+  position: relative; /* Ustawienie formularza jako kontenera dla pozycjonowanego krzyżyka */
+}
+
+.form__close {
+  position: absolute; /* Ustawienie elementu w absolutnym pozycjonowaniu */
+  top: 10px; /* Odstęp od góry formularza */
+  right: 10px; /* Odstęp od prawej krawędzi formularza */
+  font-size: 24px; /* Początkowy rozmiar tekstu (krzyżyka) */
+  color: #333; /* Kolor tekstu (możesz zmienić na odpowiedni) */
+  cursor: pointer; /* Zmiana kursora na wskazujący */
+  transition: transform 0.2s ease, font-size 0.2s ease; /* Płynna animacja zmiany rozmiaru */
+  transform-origin: center; /* Ustawienie punktu transformacji na środek */
+}
+
+.form__close:hover {
+  transform: scale(1.5); /* Zwiększenie rozmiaru elementu przy najechaniu */
+  font-size: 36px; /* Zwiększenie rozmiaru czcionki */
+  color: #4A90E2; /* Zmiana koloru na niebieski przy najechaniu */
+}
+  
+  .form__label {
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #333; /* Kolor tekstu etykiety */
+  }
+  
+  .form__input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc; /* Kolor obramowania */
+    border-radius: 4px;
+    margin-bottom: 10px; /* Odstęp między polami input */
+    outline: none;
+    transition: border-color 0.3s ease;
+    display: flex;
+  }
+  
+  .form__input:focus {
+    border-color: #4A90E2; /* Kolor obramowania podczas fokusu */
+  }
+  
+  /* Podtytuł */
+  .form__subtitle {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px; /* Odstęp od reszty formularza */
+    text-align: center; /* Wyrównanie podtytułu do środka */
+  }
+  
+  .form__button {
+    padding: 8px 16px; /* Mniejszy przycisk */
+    font-size: 14px;
+    color: white;
+    background-color: #4A90E2;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: flex-end; /* Ustawienie przycisku na dole po prawej stronie formularza */
+  }
+  
+  .form__button:hover {
+    background-color: #357ABD;
+  }

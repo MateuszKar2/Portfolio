@@ -1,0 +1,24 @@
+.container__circle {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.circle {
+    width: 300px; /* Szerokość kółka */
+    height: 300px; /* Wysokość kółka */
+    overflow: hidden;
+    border-radius: 50%; /* Ustawia kształt kółka */
+}
+
+.circle__picture {
+    width: 100%; /* Dostosowuje obraz do kółka */
+    height: auto; /* Zachowuje proporcje */
+    padding-right: 100px;
+}
+
+.circle__text {
+    font-size: 25px;
+    padding-top: 250px;
+}
+

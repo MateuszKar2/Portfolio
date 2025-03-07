@@ -1,66 +1,164 @@
-
-
-.project__header {
-    display: flex;
-    align-items: center;
-    gap: 20px;
+/* Animacja ładowania */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px); /* Element zaczyna przesunięty w dół */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* Element kończy w swojej docelowej pozycji */
+    }
 }
 
+/* Animacja dla ikonek */
+@keyframes slideInFromLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-30px); /* Element zaczyna poza ekranem z lewej strony */
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0); /* Element kończy na swojej docelowej pozycji */
+    }
+}
+
+/* Animacja dla linku projektu */
+@keyframes scaleUp {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Styl dla kontenera projektu */
+.project {
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: fadeIn 0.8s ease-out; /* Dodanie animacji po załadowaniu */
+}
+
+/* Styl dla nagłówka projektu */
 .project__position {
-    font-size: 24px; /* Rozmiar czcionki dla paragrafu */
-    color: #62550e; /* Kolor tekstu paragrafu */
-    margin-top: 20px; /* Margines nad paragrafem */
-    transition: color 0.3s; /* Animacja koloru */
-}
-
-.project__position:hover {
-    color: #b66b0f; /* Zmiana koloru przy najeździe */
-    font-size: 34px;
-}
-
-.project__icons {
-    color: black;
-    transition: color 1s;
-    font-size: 30px;
-}
-
-.project__icons:hover {
-    color: rgb(63, 116, 30);
     font-size: 32px;
+    font-weight: bold;
+    color: #0C7C25; /* Kolor nagłówka */
+    margin-bottom: 10px;
+    opacity: 0;
+    animation: fadeIn 1s ease-out forwards 0.2s; /* Animacja dla nagłówka */
 }
 
-.project__place {
+/* Opis projektu */
+.project__description {
+    font-size: 16px;
+    line-height: 1.5;
+    color: white;
+    max-width: 800px;
+    margin: 0 auto;
+    opacity: 0;
+    animation: fadeIn 1s ease-out forwards 0.4s; /* Animacja dla opisu */
+}
+
+/* Wizualizacja projektu */
+.project__visual {
     display: flex;
-    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1000px;
+    margin: 20px auto;
+    opacity: 0;
+    animation: fadeIn 1s ease-out forwards 1s; /* Animacja dla wizualizacji */
 }
 
-.project__text {
+/* Obrazek projektu */
+.project__picture {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.project__picture:hover {
+    transform: scale(1.05); /* Lekka animacja powiększenia obrazka */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Cień wokół obrazka */
+}
+
+/* Link do projektu */
+.project__link {
     font-size: 20px;
-    padding-left: 50px;
-    padding-right: 50px;
-    text-align: left;
-    font-family: 'Roboto', sans-serif;
-    line-height: 1.6; /* Opcjonalnie, dla lepszej czytelności */
+    color: #0C7C25;
+    text-decoration: none;
+    font-weight: bold;
+    padding-top: 10px;
+    transition: color 0.3s ease, transform 0.3s ease;
+    opacity: 0;
+    animation: scaleUp 0.5s ease-out forwards 1.3s; /* Animacja dla linku */
 }
 
-.project__links {
-    display: block;   
+.project__link:hover {
+    color: #026B15;
+    transform: translateY(-3px); /* Lekka animacja unoszenia linku */
 }
 
-.project__cont {
-    overflow: hidden;          /* Zapobiega wyciekaniu tekstu */
-    width: 100%;             /* Ustal szerokość kontenera */
-    padding: 10px;            /* Opcjonalne wypełnienie */
-    font-size: 24px;
-    color: #62550e;
+/* Animacja ikon */
+.project__icons {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-start;
+    font-size: 30px;
+    opacity: 0;
+    animation: fadeIn 1s ease-out forwards 1.5s; /* Animacja dla ikon */
 }
 
-.project__cont:hover .project__footer {
-    transform: translateX(50%);  /* Przesunięcie tekstu na 100% szerokości */
-    transition: transform 3s ease;    
-    color: #b66b0f;
+/* Każda ikona pojawia się z opóźnieniem */
+.project__icons svg {
+    width: 40px;
+    height: 40px;
+    animation: slideInFromLeft 0.6s ease-out forwards;
+    animation-delay: calc(0.3s * var(--i)); /* Opóźnienie dla każdej ikony */
 }
 
-.project__footer {
-    transform: translateX(0);        /* Początkowe położenie */
+/* Dostosowanie dla ikon (JavaScript, Sass, Github, etc.) */
+.project__icons svg:nth-child(1) {
+    --i: 1; /* Ustalamy opóźnienie */
 }
+
+.project__icons svg:nth-child(2) {
+    --i: 2; /* Ustalamy opóźnienie */
+}
+
+.project__icons svg:nth-child(3) {
+    --i: 3; /* Ustalamy opóźnienie */
+}
+
+/* Separator */
+.separator {
+    border: none;
+    height: 1px;
+    background-color: #ccc;
+    margin-top: 40px;
+    width: 80%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

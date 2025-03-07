@@ -1,187 +1,35 @@
-.container__circle {
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-    padding-top: 50px;
-}
-
-.circle {
-    width: 250px; /* Szerokość kółka */
-    height: 250px; /* Wysokość kółka */
-    overflow: hidden;
-    border-radius: 50%; /* Ustawia kształt kółka */
-}
-
-.circle__picture {
-    width: 100%; /* Dostosowuje obraz do kółka */
-    height: auto; /* Zachowuje proporcje */
-}
-
-.circle__text {
-    color: rgb(56, 19, 53);
-    border-left: 4px solid #007BFF; /* Kolor pionowej linii */
-    padding: 15px 20px; /* Odstępy wewnętrzne */
-    margin: 20px 0; /* Margines górny i dolny */
-    font-style: italic; /* Kursywa */
-    position: relative; /* Umożliwia pozycjonowanie pseudo-elementu */
-    font-weight: 800;
-}
-
-.circle__text::before {
-    content: '“'; /* Pseudo-element do otwierającego cudzysłowu */
-    font-size: 50px; /* Rozmiar cudzysłowu */
-    position: absolute; /* Pozycjonowanie */
-    top: -10px; /* Wysokość */
-    left: 10px; /* Pozycja w lewo */
-    color: #007BFF; /* Kolor cudzysłowu */
-}
-
-.icons {
-    font-size: 60px;
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    padding-top: 30px;
-}
-
-.icon__javaScript {
-    color: yellow;
-    cursor: pointer; /* Zmiana kursora przy najechaniu */
-}
-
-.icon__typeScript {
-    color: blue;
-    cursor: pointer; /* Zmiana kursora przy najechaniu */
-}
-
-.icon__react {
-    color: greenyellow;
-    cursor: pointer; /* Zmiana kursora przy najechaniu */
-}
-
-.icon__redux {
-    color: purple;
-    cursor: pointer; /* Zmiana kursora przy najechaniu */
-}
-
-.icon__node {
-    color: brown;
-    cursor: pointer; /* Zmiana kursora przy najechaniu */
-}
-
-.icon__mongo {
-    color: green;
-    cursor: pointer; /* Zmiana kursora przy najechaniu */
-}
-
-.icon__html {
-    color: orange;
-    cursor: pointer; /* Zmiana kursora przy najechaniu */
-}
-
-.icon__cass {
-    color: red;
-    cursor: pointer; /* Zmiana kursora przy najechaniu */
-}
-
-.icon__css {
-    color: rgb(226, 20, 174);
-    cursor: pointer; /* Zmiana kursora przy najechaniu */
-}
-
-
-.icon__javaScript:hover {
-    background-color: black; /* Kolor tła po najechaniu */
-    color: yellow; /* Kolor ikony po najechaniu */
-    transform: scale(1.5); /* Powiększenie ikony */
-    border-radius: 50%; /* Zmiana kształtu na okrągły */
-}
-
-.icon__typeScript:hover {
-    background-color: black; /* Kolor tła po najechaniu */
-    color: blue; /* Kolor ikony po najechaniu */
-    transform: scale(1.5); /* Powiększenie ikony */
-    border-radius: 50%; /* Zmiana kształtu na okrągły */
-}
-
-.icon__react:hover {
-    background-color: rgb(10, 89, 67); /* Kolor tła po najechaniu */
-    color: rgb(0, 255, 179); /* Kolor ikony po najechaniu */
-    transform: scale(1.5); /* Powiększenie ikony */
-    border-radius: 50%; /* Zmiana kształtu na okrągły */
-}
-
-.icon__redux:hover {
-    background-color: purple; /* Kolor tła po najechaniu */
-    color: white; /* Kolor ikony po najechaniu */
-    transform: scale(1.5); /* Powiększenie ikony */
-    border-radius: 50%; /* Zmiana kształtu na okrągły */
-}
-
-.icon__node:hover {
-    background-color: gray; /* Kolor tła po najechaniu */
-    color: rgb(14, 116, 33); /* Kolor ikony po najechaniu */
-    transform: scale(1.5); /* Powiększenie ikony */
-    border-radius: 50%; /* Zmiana kształtu na okrągły */
-}
-
-.icon__mongo:hover {
-    color: green; /* Kolor ikony po najechaniu */
-    transform: scale(1.5); /* Powiększenie ikony */
-    border-radius: 50%; /* Zmiana kształtu na okrągły */
-}
-
-.icon__html:hover {
-    color: rgb(139, 68, 14); /* Kolor ikony po najechaniu */
-    transform: scale(1.5); /* Powiększenie ikony */
-}
-
-.icon__sass:hover {
-    background-color: rgb(171, 27, 75); /* Kolor tła po najechaniu */
-    color: white; /* Kolor ikony po najechaniu */
-    transform: scale(1.5); /* Powiększenie ikony */
-    border-radius: 50%; /* Zmiana kształtu na okrągły */
-}
-
-.icon__css:hover {
-    color: rgb(118, 13, 139); /* Kolor ikony po najechaniu */
-    transform: scale(1.5); /* Powiększenie ikony */
-}
-
-
 .text {
     padding-top: 50px;
     padding-left: 50px;
     padding-right: 50px;
+    color: aliceblue;
+    text-align: center;
+    font-size: 1.5rem; /* Użycie rem do responsywności */
 }
 
-@keyframes text {
-    0% {
-        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
-    }
-    100% {
-        text-shadow: 0 0 20px rgba(255, 136, 0, 0.7), 
-                     0 0 30px rgba(255, 0, 128, 0.7); /* Intensyfikacja cienia */
-    }
+.icons {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    gap: 20px; /* Większy odstęp między ikonami */
 }
 
-.text__course {
-    font-size: 25px;
+.icon {
+    border: 1px solid black;
+    padding: 12px; /* Zwiększenie paddingu dla większego obszaru wokół ikon */
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Dodanie animacji */
+    transform-origin: center; /* Utrzymywanie proporcji podczas skalowania */
 }
 
-.text__favourite {
-    font-size: 20px;
-    text-align: left;
+/* Tylko dla ikony, na którą najedzie użytkownik */
+.icon:hover {
+    transform: scale(1.5); /* Powiększenie ikony przy hoverze */
+    box-shadow: 0 4px 8px rgba(4, 75, 11, 0.3); /* Cień przy hoverze */
 }
 
-.text__additional {
-    font-size: 20px;
-    text-align: left;
-}
-
-.text__cooporate {
-    font-size: 25px;
-    padding-left: 300px;
-    padding-bottom: 50px;
-    text-align: left;
+/* Rozmiar ikon */
+.icon svg {
+    width: 32px; /* Powiększenie rozmiaru ikon */
+    height: 32px;
 }
