@@ -3,9 +3,10 @@ import { NavLink } from 'react-router-dom';
 
 
 export const Container = styled.div`
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 0 16px;
+  max-width: 800px;
+  margin: 0 auto;;
+  padding: 0 20px;
+  background-color: black;
 `;
 
 export const Header = styled.header`
@@ -16,22 +17,19 @@ export const Header = styled.header`
   padding: 8px 0;
   margin-bottom: 16px;
   border-bottom: 1px solid black;
-
-  > nav {
-    display: flex;
-  }
 `;
 
 export const Logo = styled.p`
-  font-weight: 700;
+  font-weight: 500;
   margin: 0;
+  padding-top: 50px;
 `;
 
 export const Link = styled(NavLink)`
   padding: 8px 16px;
-  border-radius: 4px;
+  border-radius: 8px;
   text-decoration: none;
-  color: black;
+  color: white;
   font-weight: 500;
 
   &.active {
