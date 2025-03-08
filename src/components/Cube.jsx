@@ -19,7 +19,9 @@ const Cube = () => {
         renderer.setClearColor(0x000000, 0);  // Transparent background
         renderer.setSize(400, 400); // Dopasowanie rozmiaru renderera do rozmiarów sześcianu (np. 2x2 jednostki)
 
-        mountRef.current.appendChild(renderer.domElement);
+        const mountNode = mountRef.current; // Zapisywanie referencji do zmiennej lokalnej
+
+        mountNode.appendChild(renderer.domElement);
 
         // Tworzenie sześcianu
         const geometry = new THREE.BoxGeometry(3, 3, 3); // Geometria sześcianu o rozmiarze 2x2x2
@@ -49,17 +51,15 @@ const Cube = () => {
 
         // Czyszczenie zasobów po unmount
         return () => {
-            if (mountRef.current) {
-                mountRef.current.removeChild(renderer.domElement);
+            if (mountNode) {  // Używamy lokalnej zmiennej
+                mountNode.removeChild(renderer.domElement);
             }
         };
-    }, []);
+    }, []); // Efekt jest uruchamiany tylko raz, przy montowaniu komponentu
 
     return (
-            <div className={styles.threeContainer} ref={mountRef}></div>
+        <div className={styles.threeContainer} ref={mountRef}></div>
     );
 };
 
 export default Cube;
-
-
