@@ -1,15 +1,22 @@
 
 
-import styles from './../module/Projects.module.css';
+import styles from './../styles/Projects.module.css';
 
-import {JavaScript, React, Node, Github, Mongo, Sass, Redux, TypeScript} from './Icons';
+import {JavaScript, React, Node, Github, Mongo, Sass, Redux, TypeScript} from '../components/Icons';
 
-const iceCream = require('./../assets/images/iceCream.png');
-const filmoteka = require('./../assets/images/Filmoteka.png');
-const kapusta = require('./../assets/images/Kapusta.png');
-const feedback = require('./../assets/images/feedback.png');
-const movies = require('./../assets/images/movies.png');
-const registration = require('./../assets/images/registration.png');
+// const iceCream = require('./../assets/images/iceCream.png');
+// const filmoteka = require('./../assets/images/Filmoteka.png');
+// const kapusta = require('./../assets/images/Kapusta.png');
+// const feedback = require('./../assets/images/feedback.png');
+// const movies = require('./../assets/images/movies.png');
+// const registration = require('./../assets/images/registration.png');
+
+import iceCream from './../assets/images/iceCream.png';
+import filmoteka from './../assets/images/Filmoteka.png';
+import kapusta from './../assets/images/Kapusta.png';
+import feedback from './../assets/images/feedback.png';
+import movies from './../assets/images/movies.png';
+import registration from './../assets/images/registration.png';
 
 const  Projectsss = () => {
 
@@ -38,7 +45,7 @@ const  Projectsss = () => {
             </a>
         </div>
 
-        <img className={styles.project__picture} src={iceCream} alt="Ice Cream Project - Responsive Web Design" />
+        <img className={styles.project__picture} src={iceCream} alt="Ice Cream Project - Responsive Web Design" loading="lazy"/>
     </div>
 
     {/* Separator */}
@@ -69,7 +76,7 @@ const  Projectsss = () => {
             </a>
         </div>
 
-        <img className={styles.project__picture} src={filmoteka} alt="Filmoteka Project" />
+        <img className={styles.project__picture} src={filmoteka} alt="Filmoteka Project" loading="lazy"/>
     </div>
 
     {/* Separator */}
@@ -99,7 +106,7 @@ const  Projectsss = () => {
             </a>
         </div>
 
-        <img className={styles.project__picture} src={feedback} alt="Feedback Project" />
+        <img className={styles.project__picture} src={feedback} alt="Feedback Project" loading="lazy"/>
     </div>
 
     {/* Separator */}
@@ -129,7 +136,7 @@ const  Projectsss = () => {
             </a>
         </div>
 
-        <img className={styles.project__picture} src={movies} alt="Movies Project" />
+        <img className={styles.project__picture} src={movies} alt="Movies Project" loading="lazy"/>
     </div>
 
     {/* Separator */}
@@ -160,7 +167,7 @@ const  Projectsss = () => {
             </a>
         </div>
 
-        <img className={styles.project__picture} src={registration} alt="Phonebook Project" />
+        <img className={styles.project__picture} src={registration} alt="Phonebook Project" loading="lazy"/>
     </div>
 
     {/* Separator */}
@@ -192,7 +199,7 @@ const  Projectsss = () => {
             </a>
         </div>
 
-        <img className={styles.project__picture} src={kapusta} alt="Kapusta Project" />
+        <img className={styles.project__picture} src={kapusta} alt="Kapusta Project" loading="lazy"/>
     </div>
 
     {/* Separator */}

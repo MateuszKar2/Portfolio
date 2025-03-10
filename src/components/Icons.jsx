@@ -1,5 +1,5 @@
 import {SiTypescript,SiJavascript,SiReact,SiRedux,SiNodedotjs,SiMongodb,SiHtml5,SiSass,SiCss3,SiGithub, SiVuedotjs, SiExpress} from 'react-icons/si';
-import styles from "./../module/Icons.module.css";
+import styles from "./../styles/Icons.module.css";
 
 export const Express = () => {
     return (

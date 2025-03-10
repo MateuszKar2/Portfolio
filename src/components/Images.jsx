@@ -1,5 +1,5 @@
 
-import styles from './../module/Images.module.css'
+import styles from './../styles/Images.module.css'
 const myPicture = require('./../assets/images/my.jpg');
 
 const Images = () => {

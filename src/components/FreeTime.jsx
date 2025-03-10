@@ -1,4 +1,4 @@
-import styles from './../module/FreeTime.module.css';
+import styles from './../styles/FreeTime.module.css';
 import Cube from './Cube'; // Używamy importu ES6, zamiast require
 
 const FreeTime = () => {

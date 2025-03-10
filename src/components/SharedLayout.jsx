@@ -1,6 +1,6 @@
 import { Outlet } from "react-router-dom";
-import {Container, Header, Logo, Link} from './SharedLayout.styled';
-import Footer from "pages/Footer";
+import {Container, Header, Logo, Link} from '../styles/SharedLayout.styled';
+import Footer from "../pages/Footer";
 
 
 
@@ -11,7 +11,7 @@ const SharedLayout = () => {
             <Header>
                 <Logo/>
                     <nav>
-                        <Link to="/" end>Cv</Link>
+                        <Link to="/">Cv</Link>
                         <Link to="/projects">Projects</Link>
                         <Link to="/certificates">Certificates</Link>
                         <Link to="/about">About</Link>

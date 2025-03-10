@@ -1,4 +1,4 @@
-import styles from './../module/Footer.module.css';
+import styles from './../styles/Footer.module.css';
 
 const phone = require('./../assets/images/phone.png');
 const linkedin = require('./../assets/images/linkedin.png');

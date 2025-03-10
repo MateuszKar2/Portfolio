@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import * as THREE from "three";
-import styles from './../module/Cube.module.css';
+import styles from './../styles/Cube.module.css';
 
 const Cube = () => {
     const mountRef = useRef(null); // Ref do kontenera, w którym renderujemy scenę Three.js

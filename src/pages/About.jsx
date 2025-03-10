@@ -1,5 +1,5 @@
-import FreeTime from 'components/FreeTime';
-import styles from './../module/About.module.css';
+import FreeTime from '../components/FreeTime';
+import styles from './../styles/About.module.css';
 
 const police = require('./../assets/images/police.jpg');
 
@@ -32,7 +32,7 @@ const About = () => {
                     <li className={styles.police__positive}>Ability to work with processes and procedures</li>
                 </ul>
 
-                <img className={styles.police__images} src={police} alt="police"  />
+                <img className={styles.police__images} src={police} alt="police"  loading="lazy"/>
 
             </div>
         </div>

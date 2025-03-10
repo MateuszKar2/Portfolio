@@ -25,7 +25,7 @@
 /* Tylko dla ikony, na którą najedzie użytkownik */
 .icon:hover {
     transform: scale(1.5); /* Powiększenie ikony przy hoverze */
-    box-shadow: 0 4px 8px rgba(4, 75, 11, 0.3); /* Cień przy hoverze */
+    box-shadow: 0 6px 10px rgba(4, 75, 11, 0.3); /* Cień przy hoverze */
 }
 
 /* Rozmiar ikon */

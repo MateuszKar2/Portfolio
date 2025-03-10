@@ -1,7 +1,7 @@
-import Images from 'components/Images';
-import styles from './../module/Cv.module.css';
+import Images from '../components/Images';
+import styles from './../styles/Cv.module.css';
 
-import {Html, Css, JavaScript, React, Node, Vue, TypeScript, Github, Mongo, Sass, Redux, Express} from './Icons';
+import {Html, Css, JavaScript, React, Node, Vue, TypeScript, Github, Mongo, Sass, Redux, Express} from '../components/Icons';
 
 
 const Cv = () => {

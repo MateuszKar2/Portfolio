@@ -1,4 +1,4 @@
-import styles from './../module/Certificates.module.css';
+import styles from './../styles/Certificates.module.css';
 
 const goIT = require('./../assets/images/goIT.png');
 const ts1 = require('./../assets/images/ts-1.png');
