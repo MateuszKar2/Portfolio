@@ -1,12 +1,13 @@
 .container__circle {
+    padding-bottom: 25px;
     display: flex;
-    justify-content: center;
-    padding-bottom: 50px;
+    flex-direction: column; /* Ustawia elementy w kolumnie */
+    align-items: center; /* Wyrównuje wszystko do środka */
 }
 
 .circle {
-    width: 300px; /* Szerokość kółka */
-    height: 300px; /* Wysokość kółka */
+    width: 200px; /* Szerokość kółka */
+    height: 200px; /* Wysokość kółka */
     overflow: hidden;
     border-radius: 50%; /* Ustawia kształt kółka */
 }
@@ -14,11 +15,44 @@
 .circle__picture {
     width: 100%; /* Dostosowuje obraz do kółka */
     height: auto; /* Zachowuje proporcje */
-    padding-right: 100px;
 }
 
 .circle__text {
-    font-size: 25px;
-    padding-top: 250px;
+    font-size: 15px;
+    text-align: center;
+    margin-top: 10px;
 }
 
+
+
+@media (min-width: 600px) {
+    .circle {
+        width: 300px; /* Zwiększamy szerokość kółka */
+        height: 300px; /* Zwiększamy wysokość kółka */
+    }
+
+    .circle__text {
+        font-size: 25px;
+        margin-top: 15px; /* Mniejszy odstęp między obrazem a tekstem */
+    }
+}
+
+@media (min-width: 1024px) {
+    .container__circle {
+        padding-bottom: 25px;
+        padding-left: 100px;
+        display: flex;
+        flex-direction: row; /* Ustawia elementy w kolumnie */
+        align-items:end; /* Wyrównuje wszystko do środka */
+    }
+
+    .circle {
+        width: 250px; /* Szerokość kółka */
+        height: 250px; /* Wysokość kółka */
+    }
+
+    .circle__text {
+        font-size: 25px;
+        margin-top: 15px; /* Mniejszy odstęp między obrazem a tekstem */
+    }
+}

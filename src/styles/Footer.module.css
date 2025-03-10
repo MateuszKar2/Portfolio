@@ -1,21 +1,12 @@
-
- .footer {
-    margin-top: 50px; /* Zmniejszenie marginesu górnego */
-    background-color: rgb(0,0,0); /* Dodanie ciemnego tła, aby stopka była bardziej wyrazista */
-    padding-bottom: 20px;
-    padding: 0;
-}
-
-.footer__text {
-    padding: 50px;
+.footer {
     color: green; /* Zmiana koloru tekstu na biały, aby był bardziej czytelny */
     text-align: center;
-    font-size: 1.5rem; /* Użycie rem zamiast px, aby zachować responsywność */
+    font-size: 15px;
 }
 
 .footer__position {
     display: flex;
-    justify-content: space-between; /* Może lepiej użyć space-between dla bardziej zrównoważonego układu */
+    justify-content: space-between; 
     align-items: center;
     flex-wrap: wrap;
     margin-top: 20px;
@@ -23,7 +14,7 @@
 
 .footer__security {
     background-color: rgb(188, 188, 32);
-    font-size: 1.2rem; /* Użycie rem do lepszej skalowalności */
+    font-size: 10px; /* Użycie rem do lepszej skalowalności */
     padding: 10px;
     color: #fff; /* Kolor tekstu na ciemniejszy dla lepszej widoczności */
     font-weight: bold;
@@ -32,14 +23,14 @@
 .footer__media {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 5px;
     align-items: center;
-    margin-top: 10px;
+    margin-top: 5px;
 }
 
 .footer__icons {
-    width: 40px; /* Zmniejszenie rozmiaru ikon */
-    height: 40px;
+    width: 20px; /* Zmniejszenie rozmiaru ikon */
+    height: 20px;
     transition: transform 0.3s ease-in-out; /* Animacja przy najechaniu */
 }
 
@@ -48,8 +39,8 @@
 }
 
 .footer__github {
-    width: 50px;
-    height: 50px;
+    width: 25px;
+    height: 25px;
     border-color: blueviolet;
     border-style: solid;
     border-width: 1px;
@@ -58,7 +49,71 @@
     transition: transform 0.3s ease-in-out; /* Animacja przy najechaniu */
 }
 
+@media (min-width: 600px) {
+    .footer {
+        margin-top: 25px; /* Zmniejszenie marginesu górnego */
+        padding-bottom: 10px;
+    }
+    
+    .footer__text {
+        padding: 25x;
+        font-size: 20px;
+    }
+    
+    .footer__security {
+        font-size: 15px
+    }
+    
+    .footer__media {
+        gap: 10px;
+        margin-top: 10px;
+    }
+    
+    .footer__icons {
+        width: 30px; /* Zmniejszenie rozmiaru ikon */
+        height: 30px;
+    }
+    
+    .footer__github {
+        width: 38px;
+        height: 38px;
+    }
+}
+
+
+@media (min-width: 1024px) {
+    
+ .footer {
+    margin-top: 50px; /* Zmniejszenie marginesu górnego */
+    padding-bottom: 20px;
+}
+
+.footer__text {
+    padding: 50px;
+    font-size: 30px;
+}
+
+.footer__security {
+    font-size: 20px
+}
+
+.footer__media {
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.footer__icons {
+    width: 40px; /* Zmniejszenie rozmiaru ikon */
+    height: 40px;
+}
+
+.footer__github {
+    width: 50px;
+    height: 50px;
+}
+
 .footer__github:hover {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Dodanie cienia przy hover */
     transform: scale(1.2);
+}
 }

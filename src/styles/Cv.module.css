@@ -1,35 +1,72 @@
 .text {
-    padding-top: 50px;
-    padding-left: 50px;
-    padding-right: 50px;
     color: aliceblue;
     text-align: center;
-    font-size: 1.5rem; /* Użycie rem do responsywności */
+    font-size: 15px; /* Użycie rem do responsywności */
 }
 
 .icons {
     display: flex;
     justify-content: center;
-    padding-top: 20px;
-    gap: 20px; /* Większy odstęp między ikonami */
+    gap: 10px; /* Większy odstęp między ikonami */
 }
 
 .icon {
     border: 1px solid black;
-    padding: 12px; /* Zwiększenie paddingu dla większego obszaru wokół ikon */
+    padding: 4px; /* Zwiększenie paddingu dla większego obszaru wokół ikon */
     border-radius: 50%;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Dodanie animacji */
     transform-origin: center; /* Utrzymywanie proporcji podczas skalowania */
 }
 
-/* Tylko dla ikony, na którą najedzie użytkownik */
 .icon:hover {
     transform: scale(1.5); /* Powiększenie ikony przy hoverze */
-    box-shadow: 0 6px 10px rgba(4, 75, 11, 0.3); /* Cień przy hoverze */
+    box-shadow: 0 6px 10px rgba(9, 105, 19, 0.3); /* Cień przy hoverze */
 }
 
-/* Rozmiar ikon */
+.icon svg {
+    width: 16px; /* Powiększenie rozmiaru ikon */
+    height: 16px;
+}
+
+@media (min-width: 600px) {
+    .text {
+        padding: 25px 25px 0 25px;
+        font-size: 20px; /* Użycie rem do responsywności */
+    }
+    
+    .icons {
+        padding-top: 10px;
+        gap: 15px; /* Większy odstęp między ikonami */
+    }
+    
+    .icon {
+        padding: 8px; /* Zwiększenie paddingu dla większego obszaru wokół ikon */
+    }
+    
+    .icon svg {
+        width: 24px; /* Powiększenie rozmiaru ikon */
+        height: 24px;
+    }
+}
+
+
+@media (min-width: 1024px) {
+    .text {
+    padding: 50px 50px 0 50px;
+    font-size: 25px; /* Użycie rem do responsywności */
+}
+
+.icons {
+    padding-top: 20px;
+    gap: 20px; /* Większy odstęp między ikonami */
+}
+
+.icon {
+    padding: 12px; /* Zwiększenie paddingu dla większego obszaru wokół ikon */
+}
+
 .icon svg {
     width: 32px; /* Powiększenie rozmiaru ikon */
     height: 32px;
+}
 }
