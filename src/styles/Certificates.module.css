@@ -4,26 +4,26 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 50px 0;
+    padding: 50px 20px; /* Mniejszy padding na urządzenia mobilne */
     gap: 40px;
 }
 
 /* Kontener dla certyfikatu */
 .certificat {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column; /* Domyślny układ dla mobilnych - kolumna */
+    justify-content: center;
     align-items: center;
     background-color: white;
     border-radius: 12px;
     padding: 20px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    width: 80%;
-    max-width: 900px;
+    width: 100%;
+    max-width: 350px; /* Szerokość dla urządzeń mobilnych */
     gap: 20px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     opacity: 0;
-    animation: fadeInUp 1s forwards; /* Animacja ładowania */
+    animation: fadeInUp 1s forwards;
 }
 
 /* Animacja wejścia */
@@ -47,7 +47,7 @@
     justify-content: center;
     align-items: center;
     gap: 10px;
-    width: 200px;
+    width: 100%;
 }
 
 /* Styl dla obrazków certyfikatu */
@@ -61,7 +61,7 @@
 
 .certificat__images:hover,
 .certificat__images2:hover {
-    transform: scale(1.05); /* Efekt powiększenia obrazków przy najechaniu */
+    transform: scale(1.05);
 }
 
 /* Styl dla info certyfikatu */
@@ -70,11 +70,12 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-align: center; /* Dla urządzeń mobilnych wyrównujemy tekst */
 }
 
 /* Tytuł certyfikatu */
 .certificat__title {
-    font-size: 20px;
+    font-size: 18px; /* Mniejszy rozmiar na urządzenia mobilne */
     font-weight: 600;
     color: #333;
     margin-bottom: 10px;
@@ -82,35 +83,70 @@
 
 /* Opis certyfikatu */
 .certificat__description {
-    font-size: 14px;
+    font-size: 13px; /* Mniejszy rozmiar tekstu na urządzenia mobilne */
     color: #555;
     line-height: 1.5;
 }
 
-/* Responsywność */
-@media (max-width: 768px) {
+/* Responsywność dla tabletów (min-width: 768px) */
+@media (min-width: 768px) {
     .certificat {
-        flex-direction: column;
+        flex-direction: row; /* Układ wierszowy na tabletach */
         align-items: center;
-        width: 90%;
+        width: 80%;
+        max-width: 900px;
     }
 
     .certificat__imageContainer {
-        width: 100%;
+        width: 250px; /* Szerokość kontenera obrazka na tabletach */
     }
 
     .certificat__images,
     .certificat__images2 {
-        width: 80%;
+        width: 100%;
+        max-width: 200px; /* Obrazki nie będą za duże */
     }
-}
 
-@media (max-width: 480px) {
+    .certificat__info {
+        text-align: left; /* Na tabletach tekst wyśrodkowany z lewej */
+    }
+
     .certificat__title {
-        font-size: 18px;
+        font-size: 20px;
     }
 
     .certificat__description {
-        font-size: 13px;
+        font-size: 14px;
+    }
+}
+
+/* Responsywność dla desktopów (min-width: 1024px) */
+@media (min-width: 1024px) {
+    .certificat {
+        flex-direction: row; /* Układ wierszowy na desktopach */
+        width: 80%;
+        max-width: 900px;
+    }
+
+    .certificat__imageContainer {
+        width: 300px; /* Większy kontener obrazka na desktopie */
+    }
+
+    .certificat__images,
+    .certificat__images2 {
+        width: 100%;
+        max-width: 250px; /* Większe obrazki */
+    }
+
+    .certificat__info {
+        text-align: left; /* Na desktopie tekst wyśrodkowany z lewej */
+    }
+
+    .certificat__title {
+        font-size: 22px; /* Większy rozmiar tytułu na desktopie */
+    }
+
+    .certificat__description {
+        font-size: 16px; /* Większy rozmiar opisu na desktopie */
     }
 }

@@ -17,7 +17,7 @@ const Cube = () => {
 
         // Ustawienie tła renderera na przezroczyste
         renderer.setClearColor(0x000000, 0);  // Transparent background
-        renderer.setSize(400, 400); // Dopasowanie rozmiaru renderera do rozmiarów sześcianu (np. 2x2 jednostki)
+        renderer.setSize(300, 300); // Dopasowanie rozmiaru renderera do rozmiarów sześcianu (np. 2x2 jednostki)
 
         const mountNode = mountRef.current; // Zapisywanie referencji do zmiennej lokalnej
 

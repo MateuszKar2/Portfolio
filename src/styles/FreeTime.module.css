@@ -1,61 +1,72 @@
+/* Ogólne style - Mobile First */
+
+/* Kontener sekcji */
 .freeTime {
-    margin-top: 100px;
+    margin-top: 50px; /* Zmniejszono odstęp na urządzeniach mobilnych */
     text-align: center;
 }
 
+/* Tytuł */
 .freeTime__title {
-    font-size: 40px;
+    font-size: 2.5rem; /* Zmniejszenie czcionki na urządzeniach mobilnych */
 }
 
-.freeTime__slideInLeft {
-    margin: 40px;
-    font-size: 40px;
-    background-color: rgb(21, 80, 7);
-    position: relative;
-    opacity: 0;  /* Ukrywamy tekst na początku */
-    animation: slideInLeft 2s forwards; /* Animacja przesuwania z lewej */
-}
-
-.freeTime__slideInRight {
-    margin: 40px;
-    font-size: 40px;
-    background-color: rgb(18, 8, 56);
-    position: relative;
-    opacity: 0;  /* Ukrywamy tekst na początku */
-    animation: slideInRight 2s forwards; /* Animacja przesuwania z prawej */
-}
-
-.freeTime__slideInLeftDown {
-    margin: 25px;
-    font-size: 25px;
-    background-color: rgb(21, 80, 7);
-    position: relative;
-    opacity: 0;  /* Ukrywamy tekst na początku */
-    animation: slideInLeftDown 1s forwards; /* Animacja przesuwania z lewej */
-}
-
+/* Elementy animowane */
+.freeTime__slideInLeft,
+.freeTime__slideInRight,
+.freeTime__slideInLeftDown,
 .freeTime__slideInRightDown {
-    margin: 25px;
-    font-size: 25px;
-    background-color: rgb(16, 4, 44);
+    margin: 20px; /* Mniejszy odstęp */
+    font-size: 1.5rem; /* Zmniejszenie czcionki na urządzeniach mobilnych */
+    background-color: rgb(21, 80, 7);
     position: relative;
     opacity: 0;  /* Ukrywamy tekst na początku */
-    animation: slideInRightDown 1s forwards; /* Animacja przesuwania z prawej */
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
 }
 
+/* Konkretny kolor dla animacji przesuwania z lewej */
+.freeTime__slideInLeft {
+    background-color: rgb(21, 80, 7);
+    animation-name: slideInLeft;
+}
+
+/* Konkretny kolor dla animacji przesuwania z prawej */
+.freeTime__slideInRight {
+    background-color: rgb(18, 8, 56);
+    animation-name: slideInRight;
+}
+
+/* Animacja przesuwania z lewej (w dół) */
+.freeTime__slideInLeftDown {
+    background-color: rgb(21, 80, 7);
+    animation-name: slideInLeftDown;
+    font-size: 1.2rem; /* Mniejsza czcionka na urządzenia mobilne */
+}
+
+/* Animacja przesuwania z prawej (w dół) */
+.freeTime__slideInRightDown {
+    background-color: rgb(16, 4, 44);
+    animation-name: slideInRightDown;
+    font-size: 1.2rem; /* Mniejsza czcionka na urządzenia mobilne */
+}
+
+/* Mottow i inne elementy */
+.freeTime__motto {
+    font-size: 2rem;
+    padding-top: 50px; /* Mniejsze odstępy */
+}
+
+/* Elastyczny kontener dla elementów */
 .freeTime__down {
     display: flex;
-    gap: 100px;
+    flex-direction: column; /* Układ kolumnowy na urządzeniach mobilnych */
+    gap: 20px;
     justify-content: center;
 }
 
-.freeTime__motto {
-    font-size: 30px;
-    padding-top: 100px;
-}
-
+/* Kolor elementów */
 .freeTime__element {
-
     color: rgb(18, 8, 56);
 }
 
@@ -92,7 +103,7 @@
         opacity: 0;
     }
     100% {
-        transform: translateX(0%);
+        transform: translateX(10%);
         opacity: 1;
     }
 }
@@ -104,7 +115,63 @@
         opacity: 0;
     }
     100% {
-        transform: translateX(-40%);
+        transform: translateX(-10%);
         opacity: 1;
+    }
+}
+
+/* Media Queries */
+
+/* Tablet (min-width: 768px) */
+@media (min-width: 768px) {
+    /* Tytuł */
+    .freeTime__title {
+        font-size: 3rem; /* Zwiększenie czcionki dla tabletów */
+    }
+
+    /* Elementy animowane */
+    .freeTime__slideInLeft,
+    .freeTime__slideInRight,
+    .freeTime__slideInLeftDown,
+    .freeTime__slideInRightDown {
+        font-size: 2rem; /* Zwiększenie czcionki dla tabletów */
+        margin: 30px; /* Większy margines */
+    }
+
+    /* Mottow */
+    .freeTime__motto {
+        font-size: 2.5rem; /* Zwiększenie czcionki */
+    }
+
+    .freeTime__down {
+        flex-direction: row; /* Zmiana na układ poziomy */
+        gap: 40px; /* Większy odstęp między elementami */
+    }
+}
+
+/* Desktop (min-width: 1024px) */
+@media (min-width: 1024px) {
+    /* Tytuł */
+    .freeTime__title {
+        font-size: 4rem; /* Zwiększenie czcionki dla desktopów */
+    }
+
+    /* Elementy animowane */
+    .freeTime__slideInLeft,
+    .freeTime__slideInRight,
+    .freeTime__slideInLeftDown,
+    .freeTime__slideInRightDown {
+        font-size: 2.5rem; /* Zwiększenie czcionki dla desktopów */
+        margin: 40px; /* Większy margines */
+    }
+
+    /* Mottow */
+    .freeTime__motto {
+        font-size: 3rem; /* Zwiększenie czcionki */
+    }
+
+    .freeTime__down {
+        flex-direction: row; /* Układ poziomy dla desktopów */
+        gap: 50px; /* Większy odstęp między elementami */
     }
 }
