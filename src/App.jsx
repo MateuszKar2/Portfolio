@@ -1,6 +1,6 @@
 
 // import {  lazy, Suspense } from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, Navigate } from 'react-router-dom';
 import SharedLayout from './components/SharedLayout';
 
 import NotFound from './pages/NotFound';
@@ -18,9 +18,10 @@ import About from './pages/About';
 
 export const App = () => {
   return (
-    // <Suspense fallback={<div>Loading....</div>}>
+
     <Routes>
-      <Route path="/" element={<SharedLayout />}>
+      <Route path="/" element={<Navigate to="/portfolio" />} />
+      <Route path="/portfolio" element={<SharedLayout />}>
         <Route index element={<Cv />} />
         <Route path="projects" element={<Projects />} />
         <Route path="certificates" element={<Certificates />} />
@@ -28,6 +29,6 @@ export const App = () => {
         <Route path="*" element={<NotFound />} />
       </Route>
     </Routes>
-    // </Suspense>
+
   );
 };

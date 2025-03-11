@@ -11,10 +11,10 @@ const SharedLayout = () => {
             <Header>
                 <Logo/>
                     <nav>
-                        <Link to="/">Cv</Link>
-                        <Link to="/projects">Projects</Link>
-                        <Link to="/certificates">Certificates</Link>
-                        <Link to="/about">About</Link>
+                        <Link to="/portfolio">Cv</Link>
+                        <Link to="/portfolio/projects">Projects</Link>
+                        <Link to="/portfolio/certificates">Certificates</Link>
+                        <Link to="/portfolio/about">About</Link>
                     </nav>
             </Header>
             <Outlet />

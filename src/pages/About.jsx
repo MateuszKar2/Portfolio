@@ -1,4 +1,5 @@
-import FreeTime from '../components/FreeTime';
+
+import FreeTime from 'components/FreeTime';
 import styles from './../styles/About.module.css';
 
 const police = require('./../assets/images/police.jpg');
