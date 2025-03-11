@@ -43,7 +43,7 @@
         padding-left: 100px;
         display: flex;
         flex-direction: row; /* Ustawia elementy w kolumnie */
-        align-items:end; /* Wyrównuje wszystko do środka */
+        align-items: flex-end; /* Wyrównuje wszystko do środka */
     }
 
     .circle {
