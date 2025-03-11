@@ -24,7 +24,7 @@ const Cube = () => {
         mountNode.appendChild(renderer.domElement);
 
         // Tworzenie sześcianu
-        const geometry = new THREE.BoxGeometry(3, 3, 3); // Geometria sześcianu o rozmiarze 2x2x2
+        const geometry = new THREE.BoxGeometry(3, 3, 3); // Geometria sześcianu o rozmiarze 3x3x3
         const material = new THREE.MeshPhongMaterial({ color: 0x4ff0b7, wireframe: true }); // Kolor sześcianu
         const cube = new THREE.Mesh(geometry, material); // Utworzenie sześcianu
         scene.add(cube);
