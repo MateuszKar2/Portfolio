@@ -121,7 +121,7 @@
     }
 
     .police__images {
-        max-width: 80%; /* Zmniejszenie maksymalnej szerokości obrazków */
+        max-width: 60%; /* Zmniejszenie maksymalnej szerokości obrazków */
     }
 }
 

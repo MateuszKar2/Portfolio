@@ -1,10 +1,25 @@
 
-/* Stylizacja kontenera renderera */
+
+/* Stylizacja kontenera renderera - mobile first */
 .threeContainer {
     margin: 0;
-    padding: 0;
     background-color: transparent; /* Ustawienie przezroczystego tła */
     border: 2px solid #000; /* Dodanie ramki dla lepszej widoczności */
     position: relative; /* Pozwoli na ewentualne ustawienia w pozycjonowaniu */
 }
 
+/* Stylizacja dla ekranów większych niż 600px (np. tablety) */
+@media (min-width: 768px) {
+    .threeContainer {
+        padding-top: 60px; /* Większa przestrzeń na większych ekranach */
+    }
+}
+
+/* Stylizacja dla ekranów większych niż 1024px (np. laptopy) */
+@media (min-width: 1024px) {
+    .threeContainer {
+        padding-top: 70px; /* Większa przestrzeń na większych ekranach */
+        max-width: 900px; /* Ograniczenie szerokości kontenera */
+        margin: 0 auto; /* Wyśrodkowanie kontenera */
+    }
+}

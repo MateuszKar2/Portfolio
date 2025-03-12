@@ -18,15 +18,15 @@ const Cv = () => {
                         My favorite part of the course was React.
                 </div>
             </div>
-                <p className={styles.icons}>
-                    <div className={styles.icon}><Html /> </div>
-                    <div className={styles.icon}><Css/> </div>
-                    <div className={styles.icon}><Sass/> </div>
-                    <div className={styles.icon}><JavaScript /> </div>
-                    <div className={styles.icon}><React /> </div>
-                    <div className={styles.icon}><Redux /> </div>
-                    <div className={styles.icon}><Node /></div>
-                </p>
+                <div className={styles.icons}>
+                    <p className={styles.icon}><Html /> </p>
+                    <p className={styles.icon}><Css/> </p>
+                    <p className={styles.icon}><Sass/> </p>
+                    <p className={styles.icon}><JavaScript /> </p>
+                    <p className={styles.icon}><React /> </p>
+                    <p className={styles.icon}><Redux /> </p>
+                    <p className={styles.icon}><Node /></p>
+                </div>
 
 
 
@@ -37,14 +37,14 @@ const Cv = () => {
                     I have also made a natural transition to creating my websites in <b>TypeScript.</b>
                 </div>  
             </div>
-                <p className={styles.icons}>
-                    <div className={styles.icon}><TypeScript/> </div>
-                    <div className={styles.icon}><Vue/> </div>
-                    <div className={styles.icon}><Github/> </div>
-                    <div className={styles.icon}><Mongo/> </div>
-                    <div className={styles.icon}><Express/> </div>
+                <div className={styles.icons}>
+                    <p className={styles.icon}><TypeScript/> </p>
+                    <p className={styles.icon}><Vue/> </p>
+                    <p className={styles.icon}><Github/> </p>
+                    <p className={styles.icon}><Mongo/> </p>
+                    <p className={styles.icon}><Express/> </p>
 
-                </p>
+                </div>
         </>
     )
 }

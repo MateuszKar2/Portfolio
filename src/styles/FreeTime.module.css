@@ -54,7 +54,6 @@
 /* Mottow i inne elementy */
 .freeTime__motto {
     font-size: 2rem;
-    padding-top: 50px; /* Mniejsze odstępy */
 }
 
 /* Elastyczny kontener dla elementów */
@@ -141,6 +140,7 @@
     /* Mottow */
     .freeTime__motto {
         font-size: 2.5rem; /* Zwiększenie czcionki */
+        padding-top: 50px; /* Mniejsze odstępy */
     }
 
     .freeTime__down {

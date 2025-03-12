@@ -1,7 +1,13 @@
 .footer {
     color: green; /* Zmiana koloru tekstu na biały, aby był bardziej czytelny */
     text-align: center;
-    font-size: 15px;
+}
+
+.footer__text {
+    padding: 20px;
+    font-size: 20px;
+    margin-top: 40px;
+    text-align: center;
 }
 
 .footer__position {
@@ -9,7 +15,7 @@
     justify-content: space-between; 
     align-items: center;
     flex-wrap: wrap;
-    margin-top: 20px;
+    margin-top: 50px;
 }
 
 .footer__security {
@@ -56,8 +62,8 @@
     }
     
     .footer__text {
-        padding: 25x;
-        font-size: 20px;
+        padding: 40px;
+        font-size: 25px;
     }
     
     .footer__security {
