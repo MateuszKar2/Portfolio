@@ -18,7 +18,6 @@ import About from './pages/About';
 
 export const App = () => {
   return (
-
     <Routes>
       <Route path="/" element={<Navigate to="/portfolio" />} />
       <Route path="/portfolio" element={<SharedLayout />}>
