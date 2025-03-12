@@ -17,7 +17,7 @@
 .freeTime__slideInLeftDown,
 .freeTime__slideInRightDown {
     margin: 20px; /* Mniejszy odstęp */
-    font-size: 1.5rem; /* Zmniejszenie czcionki na urządzeniach mobilnych */
+    font-size: 1rem; /* Zmniejszenie czcionki na urządzeniach mobilnych */
     background-color: rgb(21, 80, 7);
     position: relative;
     opacity: 0;  /* Ukrywamy tekst na początku */
