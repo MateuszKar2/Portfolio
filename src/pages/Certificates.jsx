@@ -3,6 +3,7 @@ import styles from './../styles/Certificates.module.css';
 const goIT = require('./../assets/images/goIT.png');
 const ts1 = require('./../assets/images/ts-1.png');
 const ts2 = require('./../assets/images/ts-2.png');
+const ts3 = require('./../assets/images/ts-3.png');
 
 const Certificates = () => {
 
@@ -40,6 +41,7 @@ const Certificates = () => {
                 <div className={styles.certificat__imageContainer}>
                     <img className={styles.certificat__images2} src={ts1} alt="TypeScript" />
                     <img className={styles.certificat__images2} src={ts2} alt="TypeScript" />
+                    <img className={styles.certificat__images2} src={ts3} alt="TypeScript" />
                 </div>
 
             </div>
